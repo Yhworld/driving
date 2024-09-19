@@ -1,0 +1,16 @@
+#logo {
+    max-width: 68px;
+    animation: slide-in 1.8s forwards;
+}
+
+#topbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* #navbar-test {
+    max-width: 1450px;
+} */
+
+
