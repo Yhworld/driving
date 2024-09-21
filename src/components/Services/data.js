@@ -6,26 +6,26 @@ import service2 from '../../assets/images/serviceImg/happy-charismatic-man-drivi
 
 
 const data = [
-    {
+    { 
       image: service1,
       title: 'Beginner Course',
       service: 'Service 1',
       description: 'We provide expert audio system consultation and installation services for homes, businesses, and events, we ensure a top-quality listening experience..',
-      link: '/audioservice',
+      link: '/beginner',
     },
     {
       image: service3,
       title: 'Refresher Course',
       service: 'Service 2',
       description: 'We specialize in video production services, serving a diverse range of clients and projects with game changing cutting-edge technology,',
-      link: '/videoservice',
+      link: '/refresher-course',
     },
     {
       image: service2,
       title: 'Pass Plus',
       service: 'S',
       description: 'we\'re experts at creating captivating visual content that sets your brand apart. Whether it\'s promotional videos or product showcases',
-      link: '/editing',
+      link: '/pass-plus',
     },
     // Add more data as needed
   ];

@@ -3,10 +3,14 @@ import logo from "../../assets/images/logo/Logo.svg";
 import "./navbar.css";
 // import data from "./data2";
 import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const location = useLocation();
+  const isHomepage = location.pathname === "/";
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -22,7 +26,11 @@ function Navbar() {
   };
 
   return (
-    <nav id="topbar" className="bg-transparent absolute top-0 z-10">
+    <div
+    id="topbar"
+    className={`${isHomepage ? "absolute" : "relative"} top-0 z-10 p-4 ${
+      isHomepage ? "bg-transparent" : "bg-white"
+    }`}>
     <div className="max-w-screen-xl container flex items-center justify-between md:mx-auto p-4 md:pl-8">
       <NavLink href="#" className="" to="/">
         <img
@@ -35,7 +43,8 @@ function Navbar() {
       <button
         data-collapse-toggle="navbar-dropdown"
         type="button"
-        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden"
+        
+        className={`${isHomepage ? "text-white" : "text-black"} inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden`}
         aria-controls="navbar-dropdown"
         aria-expanded={isMenuOpen ? "true" : "false"}
         onClick={toggleMenu}
@@ -66,7 +75,9 @@ function Navbar() {
         <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-transparent">
           <li>
             <NavLink
-              className="block py-2 px-3 text-white rounded md:bg-transparent md:p-0"
+           
+              className= {`${isHomepage ? "text-white" : "text-black"}
+             block py-2 px-3 rounded md:bg-transparent md:p-0`} 
               to="/"
               aria-current="page"
               onClick={closeMenu}
@@ -78,7 +89,8 @@ function Navbar() {
           <li>
             <NavLink
               to="/about"
-              className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+              className= {`${isHomepage ? "text-white" : "text-black"}
+             block py-2 px-3 rounded md:bg-transparent md:p-0`} 
               onClick={closeMenu}
               activeClassName="text-blue-700"
             >
@@ -90,7 +102,8 @@ function Navbar() {
               <button
                 id="dropdownNavbarLink"
                 data-dropdown-toggle="dropdownNavbar"
-                className="flex items-center justify-between w-full py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+                className= {`${isHomepage ? "text-white" : "text-black"}
+             md:bg-transparent flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto`} 
                 onClick={toggleDropdown}
               >
                 Services{" "}
@@ -167,7 +180,7 @@ function Navbar() {
           <li>
             <NavLink
               to="/contact"
-              className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              className={`${isHomepage ? "text-white" : "text-black"} block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0`}
               onClick={closeMenu}
               activeClassName="text-blue-700"
             >
@@ -183,7 +196,7 @@ function Navbar() {
         Get a Quotation
         </NavLink>
     </div>
-  </nav>
+  </div>
 
     // <div className="container  mx-auto  sticky top-0 z-10 p-4 bg-white">
     //   <div className="flex items-center justify-between">
