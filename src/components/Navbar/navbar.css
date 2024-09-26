@@ -1,7 +1,7 @@
-#logo {
+/* #logo {
     max-width: 68px;
     animation: slide-in 1.8s forwards;
-}
+} */
 
 #topbar {
     top: 0;
@@ -9,8 +9,15 @@
     width: 100%;
 }
 
-/* #navbar-test {
+#navbar-test {
     max-width: 1450px;
-} */
+}
 
 
+/* Navbar General Styles */
+/* #topbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  } */
+  

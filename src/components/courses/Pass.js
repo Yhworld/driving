@@ -12,209 +12,115 @@ function Pass() {
     <section id="pass-plus" className="max-w-screen-xl container flex flex-col items-center justify-center px-6 mx-auto space-y-0 md:space-y-0" loading="lazy">
       <div className="flex flex-col mb-32 space-y-12 md:w-1/2 mt-32">
         <h1 className="font-bold text-4xl text-white text-center md:text-6xl ">
-         Pass Plus Course
+        intensive Crash Course
         </h1>
         <p className=" text-center text-slate-200">
         Start your driving journey with Manchester's trusted school. Our beginner driving course will help you build confidence on the road. Book your first lesson today!
         </p>
         <div className="flex justify-center">
-          <Link
-            to="/contact"
+          <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform"
+            target="_blank" 
+  rel="noopener noreferrer"
             className="flex items-center justify-center px-16 py-4 text-base font-medium leading-6 text-gray-500 whitespace-no-wrap bg-white border-2 border-transparent rounded-full shadow-sm hover:bg-transparent hover:text-white hover:border-white focus:outline-none"
           >
             Get in Touch
-          </Link>
+          </a>
         </div>
     </div>
     </section>
     
     <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
       <div className="  container relative mx-auto">
-        <div className="flex flex-wrap justify-around -mx-4">
-        <div className="px-4 lg:w-1/2 xl:w-5/12">
+        <div className="flex flex-wrap items-center justify-center -mx-4">
+          <div className="px-4 pl-8 lg:w-1/2 xl:w-5/12">
             <div className="mt-10 lg:mt-0">
               <span className="block mb-4 text-lg font-semibold text-primary">
                 01
               </span>
               <h2 className="mb-5 text-3xl font-bold text-dark  sm:text-[40px]/[48px]">
-              What Our Pass plus Driving Course Offers
+              What Our intensive Crash Course Driving Course Offers
               </h2>
               <p className="mb-5 text-base text-body-color dark:text-dark-6">
-              The Pass Plus course is designed for new drivers who have recently passed their driving test but want to further develop their skills and confidence on the road. It focuses on areas that many new drivers find challenging and covers driving situations that are not included in the standard driving test.
+              Intensive driving courses mean compacting long hours of practice into few, short hours. It is important to those who have little time to spare and are in a hurry to get their driving licence. People require intensive driving courses for various reasons including needing the skill for a new job.
               </p>
               <p className="mb-8 text-base text-body-color dark:text-dark-6">
                 We offer flexible lesson times and expert instructors to make your learning process enjoyable and successful. Let's help you get on the road to your driving goals!
               </p>
             </div>
           </div>
-          <div className="px-4 pl-8 lg:w-1/2 xl:w-5/12">
-            <div className="mt-10 lg:mt-0">
-              <span className="block mb-4 text-lg font-semibold text-primary">
-                02
-              </span>
-              <h2 className="mb-5 text-3xl font-bold text-dark  sm:text-[40px]/[48px]">
-              What’s Included
-              </h2>
-              <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                <span className='font-semibold'>Module 1: Town Driving</span>
-              </p>
-              <p className="mb-8 text-base text-body-color dark:text-dark-6">
-              Navigate through busy Manchester city streets, learning to deal with traffic lights, roundabouts, pedestrians, and cyclists.
-              </p>
-              <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                <span className='font-semibold'>Module 2: All-Weather Driving</span>
-              </p>
-              <p className="mb-8 text-base text-body-color dark:text-dark-6">
-              Learn how to drive safely in various weather conditions including rain, snow, ice, and fog.
-
-              </p>
-              <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                <span className='font-semibold'>Module 3: Rural Roads</span>
-              </p>
-              <p className="mb-8 text-base text-body-color dark:text-dark-6">
-              Experience driving on country roads and learn how to handle blind bends, narrow lanes, and uneven surfaces.
-              </p>
-              <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                <span className='font-semibold'>Module 4: Night Driving</span>
-              </p>
-              <p className="mb-8 text-base text-body-color dark:text-dark-6">
-              Understand the challenges of driving in low light and nighttime conditions.
-
-              </p>
-              <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                <span className='font-semibold'>Module 5: Dual Carriageways</span>
-              </p>
-              <p className="mb-8 text-base text-body-color dark:text-dark-6">
-              Develop your skills on dual carriageways, focusing on safe overtaking, merging onto fast roads, and exiting safely.s.
-              </p>
-              <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                <span className='font-semibold'>Module 6: Motorways</span>
-              </p>
-              <p className="mb-8 text-base text-body-color dark:text-dark-6">
-              Gain experience on motorways, including joining and leaving the motorway, lane discipline, overtaking, and dealing with heavy traffic.
-              </p>
-            </div>
-          </div>
         </div>
-        {/* <section class="bg-white mt-24">
+        <section class="bg-white mt-24">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Our Pricing</h2>
-          <p class="mb-5 font-light text-gray-500 sm:text-xl ">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Crash Course Pricing</h2>
+          <p class="mb-5 font-light text-gray-800  sm:text-xl ">At Make it, we specialize in equipping students with the essential skills to drive cars confidently and safely.</p>
       </div>
-      <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-      <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8">
-              <h3 class="mb-4 text-2xl font-semibold">Pay-As-You-Go</h3>
-              <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best for large scale uses and extended.</p>
-              <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">£30</span>
-                  <span class="text-gray-500 dark:text-gray-400">/per lesson</span>
-              </div>
-              
-              <ul class="mb-8 space-y-4 text-left">
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>One-hour individual lessons </span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Flexible booking
-</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Tailored lessons that focus on the specific areas where you need improvement.</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Pay only for the lessons you need</span>
-                  </li>
-              </ul>
-              <a href="g" class="text-black bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Get started</a>
-          </div>
-         
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-300 shadow dark:bg-gray-800 dark:text-white ">
-              <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
-              <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for total beginner .</p>
-              <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">£150</span>
-                  <span class="text-gray-500 dark:text-gray-400">/5 lessons</span>
-              </div>
-              
-              <ul class="mb-8 space-y-4 text-left">
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>5 one-hour driving lessons.</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Introduction to vehicle controls</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Focus on fundamental driving skills</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Basic maneuvers </span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Personalized progress tracking</span>
-                  </li>
-              </ul>
-              <a href="g" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">Book Now</a>
-          </div>
-         
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-black dark:text-white">
-              <h3 class="mb-4 text-2xl font-semibold">Extended Beginner</h3>
-              <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for intermediate drivers.</p>
-              <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">£270</span>
-                  <span class="text-gray-500 dark:text-gray-400">/10 lessons</span>
-              </div>
-              
-              <ul class="mb-8 space-y-4 text-left">
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>10 one-hour driving lessons</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Comprehensive coverage of all key driving skills.</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Learning to navigate busier roads.</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>introduction to advanced maneuvers</span>
-                  </li>
-                  <li class="flex items-center space-x-3">
-                      
-                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>Mock driving test to assess your progress</span>
-                  </li>
-              </ul>
-              <a href="g" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
-          </div>
-      </div>
+      <div class="font-[sans-serif]">
+  <div class="max-w-6xl mx-auto">
+    {/* <div class="text-center">
+      <h2 class="text-gray-800 text-3xl font-bold mb-3">Automatic Driving Lessons Pricing</h2>
+      <p class="text-sm text-gray-800 ">Choose a package that suits your needs</p>
+    </div> */}
+
+    <div class="overflow-x-auto mt-16">
+      <table class="min-w-full border">
+        <thead class="whitespace-nowrap">
+          <tr class="h-24">
+            <th class="text-gray-800 px-2 py-1 font-semibold text-lg">Package</th>
+            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">5 Hours</th>
+            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">10 Hours</th>
+            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">15 Hours</th>
+            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">20 Hours</th>
+            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">25 Hours</th>
+            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">30 Hours</th>
+          </tr>
+        </thead>
+
+        <tbody class="whitespace-nowrap border">
+          <tr class="bg-black">
+            <td class="p-4 text-lg text-white font-bold">Price</td>
+            <td class="p-4 text-center text-white font-bold">£240</td>
+            <td class="p-4 text-center text-white font-bold">£435</td>
+            <td class="p-4 text-center text-white font-bold">£645</td>
+            <td class="p-4 text-center text-white font-bold">£840</td>
+            <td class="p-4 text-center text-white font-bold">£1025</td>
+            <td class="p-4 text-center text-white font-bold">£1200</td>
+          </tr>
+          <tr class="even:bg-white">
+            <td class="p-4 text-lg text-black">Includes</td>
+            
+            <td class="p-4 text-center text-black">5 hours of driving</td>
+            <td class="p-4 text-center text-black">10 hours of driving</td>
+             <td class="p-4 text-center text-black">15 hours of driving</td>
+            <td class="p-4 text-center text-black">20 hours of driving</td>
+            <td class="p-4 text-center text-black">25 hours of driving</td>
+            <td class="p-4 text-center text-black">30 hours of driving</td>
+          </tr>
+          <tr class="even:bg-black">
+            <td class="p-4 text-lg text-black">Duration</td>
+            <td class="p-4 text-center">Flexible</td>
+            <td class="p-4 text-center">Flexible</td>
+            <td class="p-4 text-center">Flexible</td>
+            <td class="p-4 text-center">Flexible</td>
+            <td class="p-4 text-center">Flexible</td>
+            <td class="p-4 text-center">Flexible</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div className='flex justify-end pt-4'>
+    <a href='https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform' target="_blank" 
+  rel="noopener noreferrer" id='card-button' class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none">
+            Book Now
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+    </a></div>
   </div>
-</section> */}
+</div>
+  </div>
+</section>
       </div>
       <Cta />
     </section>

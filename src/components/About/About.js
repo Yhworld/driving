@@ -70,7 +70,9 @@ function About() {
               </div>
               <div className="mt-16">
               <a
-                href="#w"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform"
+                target="_blank" 
+  rel="noopener noreferrer"
                 class="px-4 py-2 text-base font-medium text-center text-white bg-slate-900 border border-transparent rounded-md hover:bg-opacity-90"
               >
                 Book Now

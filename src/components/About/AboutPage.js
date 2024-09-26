@@ -1,69 +1,53 @@
 import React from "react";
 import Cta from "../CTA/Cta";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 import './About.css'
-let aboutImg = require("../../assets/Features/campaign-creators-gMsnXqILjp4-unsplash.jpg");
+// let aboutImg = require("../../assets/Features/campaign-creators-gMsnXqILjp4-unsplash.jpg");
 
 function AboutPage() {
   return (
     <>
-    <div id="about" className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-      <div className="flex flex-col lg:flex-row justify-between gap-8 mt-8">
+    <div id="about" className="max-w-screen-xl container mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+      <div className="flex flex-col lg:flex-row justify-between gap-8 mt-8 text-center">
         <div className="w-full lg:w-5/12 flex flex-col justify-center">
           <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
-            Our Story
+          Your Trusted Driving School in Manchester
           </h1>
           <p className="font-normal text-base leading-6 text-gray-600">
-            Founded in 2023, AV-System is a leading provider of innovative
-            audio, video, and networking solutions. Our founder, Ibrahim
-            Bahloul, envisioned a company that prioritizes innovation and
-            creativity in every project.
-            <p className="pt-4 pb-4">
-              With a focus on user satisfaction, AV-System delivers tailored
-              solutions to meet the unique needs of each client. Our team of
-              skilled professionals is dedicated to creating immersive
-              audiovisual experiences that exceed expectations.
-            </p>
-            <p>
-              From designing cutting-edge audiovisual systems to implementing
-              reliable networking solutions, AV-System is committed to
-              delivering exceptional quality and service. We pride ourselves on
-              our commitment to innovation, reliability, and customer
-              satisfaction, making us your trusted partner in technology.
-            </p>
+          At Expert Driving, we are dedicated to helping you master the skills needed to be a confident and safe driver. Based in the heart of Manchester, our driving instructors provide tailored lessons to suit every learner's needs, from beginners to experienced drivers looking to refresh their skills.
           </p>
         </div>
-        <div className="">
-          <img
-            className=""
-            src="https://i.ibb.co/FhgPJt8/Rectangle-116.png"
-            alt="A group of People"
-            loading="lazy"
-          />
+        <div className="w-full lg:w-5/12 flex flex-col justify-center">
+          <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
+          Our Approach
+          </h1>
+          <p className="font-normal text-base leading-6 text-gray-600">
+          We believe in creating a supportive and relaxed learning environment. Our instructors understand that every learner is different, so we focus on building your confidence at a pace that suits you. From your first lesson to your final test, we're here to ensure you have all the skills you need to drive safely and confidently for life.
+          </p>
         </div>
+      
       </div>
 
-      <div className="flex lg:flex-row flex-col gap-8 justify-between mt-24">
-        <div className="">
+      <div className="flex lg:flex-row flex-col gap-8 justify-center text-center mt-24">
+        {/* <div className="">
           <img
             className="aboutimg2"
             src={aboutImg}
             alt="A group of People"
             loading="lazy"
           />
-        </div>
+        </div> */}
         <div className="w-full lg:w-5/12 flex flex-col justify-center">
           <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
             Our Mission
           </h1>
           <p className="font-normal text-base leading-6 text-gray-600">
-          At AV-System, our mission is simple: to provide top-quality audio, video, and networking solutions that exceed expectations and enhance user experiences. With a commitment to innovation and customer satisfaction, we aim to deliver cutting-edge technology and personalized service to every client. Our goal is to revolutionize the industry by offering reliable, user-friendly solutions that empower our clients to thrive in today's digital landscape.
+          Our mission is simple: to empower every learner with the skills and knowledge needed to become a safe, confident driver. As a certified driving school, we take pride in offering the most comprehensive training in Manchester, designed to help you navigate the roads with ease.
           </p>
         </div>
       </div>
       <Cta />
     </div>
-    <Footer />
     </>
   );
 }

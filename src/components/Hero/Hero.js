@@ -1,6 +1,8 @@
 import React from 'react'
 import './hero.css'
+import { Link } from "react-scroll";
 const heropic = require('../../assets/images/hero/hero.jpg')
+
 
 function Hero() {
   return (
@@ -17,15 +19,15 @@ function Hero() {
       Proudly one of Manchester’s top driving schools, we offer expert lessons with a high pass rate. Our experienced instructors are here to help you master the road with confidence.
       </p>
       <div className="flex justify-center">
-        <button
+        <Link
             to="services"
-            spy={true}
+            // spy={true}
             smooth={true}
-            duration={500}
-          class="flex items-center justify-center px-16 py-4 text-base font-medium leading-6 text-gray-500 whitespace-no-wrap bg-white border-2 border-transparent rounded-full shadow-sm hover:bg-transparent hover:text-white hover:border-white focus:outline-none"
+            duration={400}
+          class="flex items-center justify-center px-16 py-4 text-base font-medium leading-6 text-gray-500 whitespace-no-wrap bg-white border-2 border-white rounded-full shadow-sm hover:bg-transparent hover:text-white hover:border-white focus:outline-none"
         >
           Learn More
-        </button>
+        </Link>
       </div>
     </div>
   </div>

@@ -8,23 +8,23 @@ import service2 from '../../assets/images/serviceImg/happy-charismatic-man-drivi
 const data = [
     { 
       image: service1,
-      title: 'Beginner Course',
+      title: 'Beginner Course (Automatic & Manual)',
       service: 'Service 1',
-      description: 'We provide expert audio system consultation and installation services for homes, businesses, and events, we ensure a top-quality listening experience..',
+      description: "We provide expert driving instruction tailored to beginner drivers. Whether you're starting from scratch or need help mastering the basics",
       link: '/beginner',
     },
     {
       image: service3,
-      title: 'Refresher Course',
+      title: 'Refresher Course (Automatic & Manual)',
       service: 'Service 2',
-      description: 'We specialize in video production services, serving a diverse range of clients and projects with game changing cutting-edge technology,',
+      description: "Revive your driving skills with our refresher course. Perfect for those who haven’t driven in a while, we focus on rebuilding confidence",
       link: '/refresher-course',
     },
     {
       image: service2,
-      title: 'Pass Plus',
+      title: 'Crash Course (Automatic & Manual)',
       service: 'S',
-      description: 'we\'re experts at creating captivating visual content that sets your brand apart. Whether it\'s promotional videos or product showcases',
+      description: 'Pass Plus is a practical training course that takes at least 6 hours and is for drivers to improve their skills and drive more safely.',
       link: '/pass-plus',
     },
     // Add more data as needed

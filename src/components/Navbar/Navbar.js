@@ -1,289 +1,223 @@
-import React, { useState } from "react";
-import logo from "../../assets/images/logo/Logo.svg";
-import "./navbar.css";
-// import data from "./data2";
-import { NavLink } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import React, { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
+import logo from '../../assets/images/logo/logo.svg'; // Adjust the path as necessary
+import logo2 from '../../assets/images/logo/logo2.svg';
 
 function Navbar() {
+  const location = useLocation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const location = useLocation();
-  const isHomepage = location.pathname === "/";
+  const isHomepage = location.pathname === '/'; // Check if it's the homepage
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-    setIsDropdownOpen(false); // Close the dropdown when menu is closed
-  };
+  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <div
-    id="topbar"
-    className={`${isHomepage ? "absolute" : "relative"} top-0 z-10 p-4 ${
-      isHomepage ? "bg-transparent" : "bg-white"
-    }`}>
-    <div className="max-w-screen-xl container flex items-center justify-between md:mx-auto p-4 md:pl-8">
-      <NavLink href="#" className="" to="/">
-        <img
-          src={logo}
-          id="logo"
-          loading="lazy"
-          alt="Flowbite Logo"
-        />
-      </NavLink>
-      <button
-        data-collapse-toggle="navbar-dropdown"
-        type="button"
-        
-        className={`${isHomepage ? "text-white" : "text-black"} inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden`}
-        aria-controls="navbar-dropdown"
-        aria-expanded={isMenuOpen ? "true" : "false"}
-        onClick={toggleMenu}
-      >
-        <span className="sr-only">Open main menu</span>
-        <svg
-          className="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M1 1h15M1 7h15M1 13h15"
-          />
-        </svg>
-      </button>
-      <div
-        className={`${
-          isMenuOpen ? "block" : "hidden"
-        } w-full md:block md:w-auto`}
-        id="navbar-dropdown"
-      >
-        <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-transparent">
-          <li>
+    <nav
+      className={`${
+        isHomepage ? 'bg-transparent absolute' : 'bg-white relative'
+      } w-full z-10 mt-6 mb-10 p-2`}
+    >
+      <div className="max-w-screen-xl container mx-auto px-4 py-4 flex justify-between items-center">
+          <NavLink to="/" onClick={closeMenu}>
+            <img alt='logo' 
+            src={`${isHomepage ? logo2 : logo}`}
+            className={`h-6 w-auto ${isHomepage ? 'text-white' : 'text-black'}`} />
+          </NavLink>
+          <div className="hidden md:flex space-x-8 ml-10">
+            {/* Links */}
             <NavLink
-           
-              className= {`${isHomepage ? "text-white" : "text-black"}
-             block py-2 px-3 rounded md:bg-transparent md:p-0`} 
               to="/"
-              aria-current="page"
+              className={`nav-link ${isHomepage ? 'text-white' : 'text-black'}`}
+              activeClassName="border-b-2 border-brown"
               onClick={closeMenu}
-              activeClassName="text-blue-700"
             >
               Home
             </NavLink>
-          </li>
-          <li>
             <NavLink
               to="/about"
-              className= {`${isHomepage ? "text-white" : "text-black"}
-             block py-2 px-3 rounded md:bg-transparent md:p-0`} 
+              className={`nav-link ${isHomepage ? 'text-white' : 'text-black'}`}
+              activeClassName="border-b-2 border-brown"
               onClick={closeMenu}
-              activeClassName="text-blue-700"
             >
               About
             </NavLink>
-          </li>
-          <li>
-            <div className="relative">
-              <button
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
-                className= {`${isHomepage ? "text-white" : "text-black"}
-             md:bg-transparent flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto`} 
-                onClick={toggleDropdown}
-              >
-                Services{" "}
-                <svg
-                  className="w-2.5 h-2.5 ms-2.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    strokeWidth="2"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
+            <div className="relative" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+              <button className={`nav-link ${isHomepage ? 'text-white' : 'text-black'}`}>
+                Services
               </button>
-              <div
-                id="dropdownNavbar"
-                className={`absolute z-10 ${
-                  isDropdownOpen ? "block" : "hidden"
-                } font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
-              >
-                <ul
-                  className="py-2 text-sm text-black"
-                  aria-labelledby="dropdownLargeButton"
-                >
-                  <li>
-                    <NavLink
-                      to="/audioservice"
-                      className="block px-4 py-2 hover:bg-gray-100 "
-                      onClick={closeMenu}
-                      activeClassName="text-blue-700"
-                    >
-                      Audio Services
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/videoservice"
-                      className="block px-4 py-2 hover:bg-gray-100 "
-                      onClick={closeMenu}
-                      activeClassName="text-blue-700"
-                    >
-                      Video Production
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/editing" 
-                      className="block px-4 py-2 hover:bg-gray-100 "
-                      onClick={closeMenu}
-                      activeClassName="text-blue-700"
-                    >
-                      Videography & Editing
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/networking"
-                      className="block px-4 py-2 hover:bg-gray-100 "
-                      onClick={closeMenu}
-                      activeClassName="text-blue-700"
-                    >
-                      Networking
-                    </NavLink>
-                  </li>
-                </ul>
-              </div>
+              {isDropdownOpen && (
+                <div className="absolute left-0 w-48 pt-2 bg-white shadow-lg rounded-md">
+                  <NavLink
+                    to="/beginner"
+                    className="block px-4 py-2 text-black hover:bg-gray-100"
+                    onClick={closeMenu}
+                  >
+                    Beginner Course
+                  </NavLink>
+                  <NavLink
+                    to="/refresher-course"
+                    className="block px-4 py-2 text-black hover:bg-gray-100"
+                    onClick={closeMenu}
+                  >
+                    Refresher Course
+                  </NavLink>
+                  <NavLink
+                    to="/crash-course"
+                    className="block px-4 py-2 text-black hover:bg-gray-100"
+                    onClick={closeMenu}
+                  >
+                    Crash Course
+                  </NavLink>
+                </div>
+              )}
             </div>
-          </li>
-          <li>
+            <NavLink
+              to="/areas"
+              className={`nav-link ${isHomepage ? 'text-white' : 'text-black'}`}
+              activeClassName="border-b-2 border-brown"
+              onClick={closeMenu}
+            >
+              Areas Covered
+            </NavLink>
             <NavLink
               to="/contact"
-              className={`${isHomepage ? "text-white" : "text-black"} block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0`}
+              className={`nav-link ${isHomepage ? 'text-white' : 'text-black'}`}
+              activeClassName="border-b-2 border-brown"
               onClick={closeMenu}
-              activeClassName="text-blue-700"
             >
-              Contact
+              Contact Us
             </NavLink>
-          </li>
-        </ul>
-      </div>
-           <NavLink
-         to="/contact"
+          </div>
+        <div className="hidden md:block">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform"
+        target="_blank" 
+        rel="noopener noreferrer"
          className="hidden md:inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-full hover:bg-gray-500 focus:shadow-outline focus:outline-none"
         >
-        Get a Quotation
-        </NavLink>
-    </div>
-  </div>
+        Book Now
+        </a>
+        </div>
 
-    // <div className="container  mx-auto  sticky top-0 z-10 p-4 bg-white">
-    //   <div className="flex items-center justify-between">
-    //     <NavLink to="/">
-    //       <img src={logo} alt="Logo" className="logo" />
-    //     </NavLink>
-    //     <div className="hidden space-x-8 md:flex">
-    //       {data.map((navigation) => {
-    //         return (
-    //           <NavLink
-    //             to={navigation.link}
-    //             className="nav-link font-medium"
-    //             style={{ cursor: "pointer" }}
-    //           >
-    //             {navigation.name}
-    //           </NavLink>
-    //         );
-    //       })}
-    //     </div>
-    //     <NavLink
-    //       href="#_"
-    //       className="hidden md:inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-full hover:bg-gray-500 focus:shadow-outline focus:outline-none"
-    //     >
-    //       Get a Quotation
-    //     </NavLink>
-    //     <button
-    //       id="menu-btn"
-    //       className={`pr-8 block hamburger md:hidden focus:outline-none ${
-    //         isOpen ? "open" : ""
-    //       }`}
-    //       onClick={toggleMenu}
-    //     >
-    //       <span className="hamburger-top"></span>
-    //       <span className="hamburger-middle"></span>
-    //       <span className="hamburger-bottom"></span>
-    //     </button>
-    //   </div>
-    //   {isOpen && (
-    //     <div className="md:hidden">
-    //       <div
-    //         id="menu"
-    //         className="relative inset-0 z-50 flex flex-col items-center justify-center bg-white font-bold py-8 space-y-6 drop-shadow-md"
-    //       >
-    //         <NavLink
-    //           to="Home"
-    //           spy={true}
-    //           smooth={true}
-    //           duration={800}
-    //           className="nav-link"
-    //           style={{ cursor: "pointer" }}
-    //         >
-    //           Home
-    //         </NavLink>
-    //         <NavLink
-    //           to="About"
-    //           spy={true}
-    //           smooth={true}
-    //           duration={800}
-    //           className="nav-link"
-    //           style={{ cursor: "pointer" }}
-    //         >
-    //           About
-    //         </NavLink>
-    //         <NavLink
-    //           to="services"
-    //           spy={true}
-    //           smooth={true}
-    //           duration={800}
-    //           className="nav-link"
-    //           style={{ cursor: "pointer" }}
-    //         >
-    //           Services
-    //         </NavLink>
-    //         <NavLink
-    //           to="contact"
-    //           spy={true}
-    //           smooth={true}
-    //           duration={800}
-    //           className="nav-link"
-    //           style={{ cursor: "pointer" }}
-    //         >
-    //           Contact
-    //         </NavLink>
-    //       </div>
-    //     </div>
-    //   )}
-    // </div>
+        <div className="md:hidden">
+          <button onClick={toggleMenu} className="text-gray-700 focus:outline-none">
+            <svg
+              className={`w-8 h-8 ${isHomepage ? 'text-white' : 'text-black'}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        </div>
+
+      <div
+        className={`fixed top-0 right-0 h-full w-full bg-white z-50 transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex flex-col p-6">
+          <button
+            className="self-end mb-4 text-black focus:outline-none"
+            onClick={closeMenu}
+          >
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <div className='mt-24'>
+          <NavLink
+            to="/"
+            className="block px-4 py-4 text-2xl text-black hover:bg-gray-100"
+            onClick={closeMenu}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            className="block px-4 py-4 text-2xl text-black hover:bg-gray-100"
+            onClick={closeMenu}
+          >
+            About
+          </NavLink>
+          <div>
+            <button className="block w-full text-2xl text-left px-4 py-4 text-black hover:bg-gray-100" onClick={toggleDropdown}>
+              Services
+            </button>
+            {isDropdownOpen && (
+              <div className="bg-white shadow-lg rounded-md">
+                <NavLink
+                  to="/beginner"
+                  className="block px-4 py-2 text-black hover:bg-gray-100"
+                  onClick={closeMenu}
+                >
+                  Beginner Course
+                </NavLink>
+                <NavLink
+                  to="/refresher-course"
+                  className="block px-4 py-2 text-black hover:bg-gray-100"
+                  onClick={closeMenu}
+                >
+                  Refresher Course
+                </NavLink>
+                <NavLink
+                  to="/crash-course"
+                  className="block px-4 py-2 text-black hover:bg-gray-100"
+                  onClick={closeMenu}
+                >
+                  Crash Course
+                </NavLink>
+              </div>
+            )}
+          </div>
+          <NavLink
+            to="/areas"
+            className="block px-4 py-4 text-2xl text-black hover:bg-gray-100"
+            onClick={closeMenu}
+          >
+            Areas Covered
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className="block px-4 py-4 text-2xl text-black hover:bg-gray-100"
+            onClick={closeMenu}
+          >
+            Contact Us
+          </NavLink>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform"
+            target="_blank" 
+  rel="noopener noreferrer"
+            className="block text-2xl px-4 py-4 text-black"
+            onClick={closeMenu}
+          >
+            Book Now
+          </a>
+        </div>
+        </div>
+      </div>
+    </nav>
   );
 }
 

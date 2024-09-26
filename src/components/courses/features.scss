@@ -8,6 +8,10 @@
     background-position: 10% 20%;
 }
 
+// #hero-text {
+//     margin-top: ;
+// }
+
 #refresher-features {
     @extend #audio-features ;
     background-image:linear-gradient(rgba(12, 12, 12, 0.124) 21.84%, rgb(12, 12, 12) 71.03%), url('../../assets/images/serviceImg/Leonardo_Phoenix_A_warm_and_inviting_image_of_a_young_adult_fe_3.webp');
@@ -27,9 +31,9 @@
 //     background-position: 0%;
 // }
 
-@media (max-width: 768px) {
-    #video-features, #audio-features {
-      border-radius: 1px;
-      height: 80vh;
-    }
-  }
+// @media (max-width: 768px) {
+//     #video-features, #audio-features {
+//       border-radius: 1px;
+//       height: 80vh;
+//     }
+//   }
