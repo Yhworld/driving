@@ -11,10 +11,15 @@ import Pass from './components/courses/Pass';
 import ScrollToTop from './pages/ScrollToTop';
 import AboutPage from './components/About/AboutPage';
 import Areas from './components/Areas/Areas';
+import Topbar from './components/Navbar/Topbar';
+import BookingForm from './components/Booking/Booking';
+import WhatsAppButton from './components/floating/WhatsappButton';
+import ScrollToTopButton from './components/floating/ScrollToTopButton';
 
 function App() {
   return (
     <div className="">
+      <Topbar />
       <Navbar />
       <ScrollToTop />
       <Routes>
@@ -24,8 +29,11 @@ function App() {
       <Route path="/crash-course" element={ <Pass /> } ></Route>
       <Route path="/about" element={ <AboutPage /> } ></Route>
       <Route path="/areas" element={ <Areas /> } ></Route>
+      <Route path="/booking" element={ <BookingForm />} ></Route>
       </Routes>
      <Footer />
+     <WhatsAppButton />
+     <ScrollToTopButton />
     </div>
   );
 }

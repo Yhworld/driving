@@ -9,7 +9,7 @@ function Services() {
     <div className='mb-48 pt-8 '>
     <section id="services" className="max-w-screen-xl container relative mx-auto p-4 mt-16">
     <div className='flex flex-col items-center'>
-    <h2 className="text-center font-semibold text-primary text-dark sm:text-1xl">
+    <h2 className="text-center font-semibold text-primary text-red-500 sm:text-1xl">
       What We Offer
     </h2>
     <p className='text-dark-6 mt-6 text-4xl font-bold text-center'>Tailored Driving Lessons in Manchester</p>
@@ -31,7 +31,7 @@ function Services() {
             <h5 class="mb-2 w-4/5 text-2xl font-bold tracking-tight text-black">{service.title}</h5>
         </Link>
         <p class="mb-3 font-normal text-gray-00 dark:text-slate-500">{service.description}.</p>
-        <Link to={service.link} id='card-button' class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none">
+        <Link to={service.link} id='card-button' class="inline-flex items-center py-2 text-sm font-bold text-center text-red-500 focus:outline-none">
             Read more
              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>

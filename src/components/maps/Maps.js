@@ -8,7 +8,7 @@ function Maps() {
           <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Visit our location
           </h2>
-          <p className="mt-4 text-lg text-gray-500">
+          <p className="mt-4 text-lg text-red-500">
 Drop by to meet our team or get a feel for the quality of our driving school.
           </p>
         </div>
@@ -28,7 +28,7 @@ Drop by to meet our team or get a feel for the quality of our driving school.
             <div>
               <div className="max-w-full mx-auto rounded-lg overflow-hidden">
                 <div className="px-6 py-4">
-                  <h3 className="text-lg font-medium text-gray-900">
+                  <h3 className="text-lg font-medium text-red-500">
                     Our Address
                   </h3>
                   <p className="mt-1 text-gray-600">
@@ -36,7 +36,7 @@ Drop by to meet our team or get a feel for the quality of our driving school.
                   </p>
                 </div>
                 <div className="border-t border-gray-200 px-6 py-4">
-                  <h3 className="text-lg font-medium text-gray-900">Hours</h3>
+                  <h3 className="text-lg font-medium text-red-500">Hours</h3>
                   <p className="mt-1 text-gray-600">
                     Monday - Friday: 9am - 5pm
                   </p>
@@ -44,7 +44,7 @@ Drop by to meet our team or get a feel for the quality of our driving school.
                   <p className="mt-1 text-gray-600">Sunday: Closed</p>
                 </div>
                 <div className="border-t border-gray-200 px-6 py-4">
-                  <h3 className="text-lg font-medium text-gray-900">Contact</h3>
+                  <h3 className="text-lg font-medium text-red-500">Contact</h3>
                   <p className="mt-1 text-gray-600">Email: info@drivingschool.com</p>
                   <p className="mt-1 text-gray-600">Phone: +44 1234 567890</p>
                 </div>

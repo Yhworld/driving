@@ -8,7 +8,7 @@ function Testimonial() {
     <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
       Read trusted reviews from our customers
     </h2>
-    <p className='text-gray-400 mt-6 text-center'>Discover What Our Clients Have to Say About Their Remarkable Time with Us.</p>
+    <p className='text-red-500 mt-6 text-center'>Discover What Our Clients Have to Say About Their Remarkable Time with Us.</p>
     </div>
     <section class="bg-white">
   <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">

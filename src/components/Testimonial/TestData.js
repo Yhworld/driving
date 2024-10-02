@@ -1,17 +1,22 @@
-// 
+import image1 from '../../assets/images/serviceImg/testimonial1.webp';
+import image2 from '../../assets/images/serviceImg/testimonial2.webp';
+import image3 from '../../assets/images/serviceImg/testimonial3.webp'
 
 const testimonial = [
-    { 
+      {
         name: 'John Doe',
-        description: 'This company\'s unparalleled expertise and unwavering commitment to quality consistently exceeded our expectations.',
+        description: 'Learning to drive with this school was an incredible experience! The instructors were patient, knowledgeable, and really boosted my confidence behind the wheel.',
+        image: image1,
       },
       {
         name: 'Jane Doe',
-        description: "I had the privilege of collaborating with AV-System Ltd on a video production project. Their innovative approach and technical expertise not only realized our vision but surpassed our expectations. The outcome was truly exceptional."
+        description: 'I was nervous about driving, but the instructors made it easy. Their clear instructions and calm demeanor helped me become a safe and confident driver. Highly recommend!',
+        image: image2,
       },
       {
         name: 'Tod Holmes',
-        description: 'Outstanding service! AV-System exceeded expectations in audio, video, and networking. A trusted partner for top-notch technology solutions.',
-      },
+        description: 'Exceptional service! The lessons were well-structured, and the instructors were both professional and friendly. I passed my driving test on the first try!',
+        image: image3,
+      }
 ]
 export default testimonial;

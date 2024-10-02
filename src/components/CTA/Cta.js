@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Cta() {
   return (
-    <section className="flex flex-col items-center justify-center container rounded-lg relative mx-auto mt-32 bg-black p-32">
+    <section className="flex flex-col items-center justify-center container rounded-lg relative mx-auto mt-32 bg-red-600 p-32">
     <div className="md:w-3/4 flex flex-col items-center ">
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
       What are you waiting for book now .
