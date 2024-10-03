@@ -7,6 +7,7 @@ import About from '../components/About/About'
 import Services from "../components/Services/Services";
 import Testimonial from "../components/Testimonial/Testimonial"
 import Maps from "../components/maps/Maps"
+import Gallery from "../components/Gallery/Gallery";
 
 function HomePage() {
   const [zoomLevel, setZoomLevel] = useState(1);
@@ -32,6 +33,9 @@ function HomePage() {
       </div>
       <div data-aos="fade-up" data-aos-delay="300">
       <Services />
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300">
+      <Gallery />
       </div>
       <div data-aos="fade-up" data-aos-delay="300">
       <Testimonial />

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 function Services() {
   return (
-    <div className='mb-48 pt-8 '>
+    <div className='mb-36 pt-8 '>
     <section id="services" className="max-w-screen-xl container relative mx-auto p-4 mt-16">
     <div className='flex flex-col items-center'>
     <h2 className="text-center font-semibold text-primary text-red-500 sm:text-1xl">

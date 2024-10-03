@@ -1,6 +1,6 @@
-import image1 from '../../assets/images/serviceImg/testimonial1.webp';
-import image2 from '../../assets/images/serviceImg/testimonial2.webp';
-import image3 from '../../assets/images/serviceImg/testimonial3.webp'
+import image1 from '../../assets/images/serviceImg/WhatsApp Image 2024-09-22 at 22.10.52 (4).webp';
+import image2 from '../../assets/images/serviceImg/WhatsApp Image 2024-09-22 at 22.10.52 (2).webp';
+import image3 from '../../assets/images/serviceImg/WhatsApp Image 2024-09-22 at 22.10.52 (5) (1).jpeg'
 
 const testimonial = [
       {

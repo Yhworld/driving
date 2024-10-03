@@ -5,7 +5,7 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { TbManualGearbox } from "react-icons/tb";
 import { IoCarSportOutline } from "react-icons/io5";
 // import aboutimg from "../../assets/images/aboutimg.jpg";
-const whyImg= require('../../assets/images/aboutimg/whyus.webp')
+const whyImg= require('../../assets/images/aboutimg/about11_batcheditor_fotor (3).webp')
 
 function About() {
   return (
@@ -37,25 +37,25 @@ function About() {
               <div class="mb-8 mt-8 flex flex-col md:flex-row md:justify-between text-base text-body-color dark:text-dark-6">
                 <div className="space-y-6">
                   <div id="points" className="flex items-center space-x-4">
-                    <LiaCertificateSolid className="text-4xl text-red-500" />
+                    <LiaCertificateSolid className="text-4xl" />
                     <p>Experienced instructors</p>
                     </div>
                     <div className="flex items-center space-x-4">
-                    <FaRegAddressCard className="text-4xl text-red-500" />
+                    <FaRegAddressCard className="text-4xl" />
                     <p>High Pass rates</p>
                     </div>
                     <div className="flex items-center space-x-4">
-                    <IoCalendarOutline className="text-4xl text-red-500" />
+                    <IoCalendarOutline className="text-4xl" />
                     <p>Flexible Scheduling</p>
                     </div>
                 </div>
                 <div className="space-y-6 mt-6 md:mt-0">
                 <div className="flex items-center space-x-4">
-                    <TbManualGearbox className="text-4xl text-red-500" />
+                    <TbManualGearbox className="text-4xl" />
                     <p>Manual & Automatic</p>
                     </div>
                     <div className="flex items-center space-x-4">
-                    <IoCarSportOutline className="text-4xl text-red-500" />
+                    <IoCarSportOutline className="text-4xl" />
                     <p>Modern Cars</p>
                     </div>
                 </div>

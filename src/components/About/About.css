@@ -7,10 +7,10 @@
   max-width: 8rem;
 }
 
-.aboutimg2 {
-  max-width: 733px;
+/* #image1 {
+  max-width: 983px;
   max-height: 415px;
-}
+} */
 
 h2 {
   font-family: var(--primary-font);

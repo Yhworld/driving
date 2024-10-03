@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import emailjs from 'emailjs-com';
 
 function BookingForm() {
@@ -15,7 +16,8 @@ function BookingForm() {
     availableDays: [],
   });
 
-  const [showToast, setShowToast] = useState(false); // New state for toast visibility
+  const [showToast, setShowToast] = useState(false);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,41 +34,62 @@ function BookingForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
+    // Send the booking confirmation email (first template)
     emailjs
       .send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_orpb9xu',
+        'template_ve7158r', // Booking confirmation template
         formData,
-        'YOUR_USER_ID'
+        'O8dGhFet4qwWbcx95'
       )
       .then(
         (response) => {
-          setShowToast(true); // Show toast on success
-          setFormData({
-            firstName: '',
-            surname: '',
-            email: '',
-            address: '',
-            phone: '',
-            course: '',
-            transmission: '',
-            hours: 5,
-            startDate: '',
-            availableDays: [],
-          });
+          // After booking confirmation is sent, send auto-reply email (second template)
+          emailjs
+            .send(
+              'service_orpb9xu',
+              'template_8fugpbr', // Auto-reply template
+              formData, // Send same data or modify as needed for the auto-reply
+              'O8dGhFet4qwWbcx95'
+            )
+            .then(
+              (autoReplyResponse) => {
+                setShowToast(true); // Show success toast after both emails are sent
+                setTimeout(() => {
+                  setShowToast(false);
+                  setFormData({
+                    firstName: '',
+                    surname: '',
+                    email: '',
+                    address: '',
+                    phone: '',
+                    course: '',
+                    transmission: '',
+                    hours: 5,
+                    startDate: '',
+                    availableDays: [],
+                  });
+                  navigate('/'); // Redirect to homepage after success
+                }, 3000); // Wait 3 seconds before redirecting
+              },
+              (autoReplyError) => {
+                alert('Failed to send auto-reply. Please try again.');
+              }
+            );
         },
         (error) => {
           alert('Failed to submit booking. Please try again.');
         }
       );
   };
+  
 
   return (
     <div className="max-w-2xl mx-auto mb-24">
       {/* Toast Notification */}
       {showToast && (
-        <div className="fixed top-5 right-5 bg-red-600 text-white p-4 rounded-lg shadow-lg transition-opacity duration-300">
+        <div className="fixed top-5 right-5 bg-green-600 text-white p-4 rounded-lg shadow-lg transition-opacity duration-300">
           <p>Booking submitted successfully!</p>
         </div>
       )}
@@ -211,8 +234,8 @@ function BookingForm() {
                   <input
                     type="checkbox"
                     value={day}
+                    checked={formData.availableDays.includes(day)}
                     onChange={handleDaysChange}
-                    required
                     className="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded"
                   />
                   <span className="ml-2 text-gray-700">{day}</span>

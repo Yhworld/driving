@@ -17,9 +17,9 @@ function Navbar() {
 
   return (
     <nav
-      className={`md:relative absolute bg:transpae${
+      className={`md:relative ${
         isHomepage ? 'bg-white' : 'bg-white relative'
-      } w-full z-10 mb-2 p-2`}
+      } w-full z-10 p-2`}
     >
       <div className="max-w-screen-xl container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
