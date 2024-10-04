@@ -14,7 +14,7 @@ function AboutPage() {
           Your Trusted Driving School in Manchester
           </h1>
           <p className="font-normal text-base leading-6 text-gray-600">
-          At Expert Driving, we are dedicated to helping you master the skills needed to be a confident and safe driver. Based in the heart of Manchester, our driving instructors provide tailored lessons to suit every learner's needs, from beginners to experienced drivers looking to refresh their skills.
+          At MakeIt Driving, we are dedicated to helping you master the skills needed to be a confident and safe driver. Based in the heart of Manchester, our driving instructors provide tailored lessons to suit every learner's needs, from beginners to experienced drivers looking to refresh their skills.
           </p>
         </div>
         <div className="w-full lg:w-5/12 flex flex-col justify-center">
