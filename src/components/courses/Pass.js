@@ -18,14 +18,12 @@ function Pass() {
         Start your driving journey with Manchester's trusted school. Our beginner driving course will help you build confidence on the road. Book your first lesson today!
         </p>
         <div className="flex justify-center">
-          <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform"
-            target="_blank" 
-  rel="noopener noreferrer"
+          <Link
+            to="/booking"
             className="flex items-center justify-center px-16 py-4 text-base font-medium leading-6 text-gray-500 whitespace-no-wrap bg-white border-2 border-transparent rounded-full shadow-sm hover:bg-transparent hover:text-white hover:border-white focus:outline-none"
           >
             Get in Touch
-          </a>
+          </Link>
         </div>
     </div>
     </section>
@@ -72,7 +70,6 @@ function Pass() {
             <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">10 Hours</th>
             <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">15 Hours</th>
             <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">20 Hours</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">25 Hours</th>
             <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">30 Hours</th>
           </tr>
         </thead>
@@ -80,12 +77,12 @@ function Pass() {
         <tbody class="whitespace-nowrap border">
           <tr class="bg-black">
             <td class="p-4 text-lg text-white font-bold">Price</td>
-            <td class="p-4 text-center text-white font-bold">£240</td>
-            <td class="p-4 text-center text-white font-bold">£435</td>
-            <td class="p-4 text-center text-white font-bold">£645</td>
-            <td class="p-4 text-center text-white font-bold">£840</td>
-            <td class="p-4 text-center text-white font-bold">£1025</td>
-            <td class="p-4 text-center text-white font-bold">£1200</td>
+            <td class="p-4 text-center text-white font-bold">£210</td>
+            <td class="p-4 text-center text-white font-bold">£380</td>
+            <td class="p-4 text-center text-white font-bold">£510</td>
+            <td class="p-4 text-center text-white font-bold">£700</td>
+            <td class="p-4 text-center text-white font-bold">£1000</td>
+ 
           </tr>
           <tr class="even:bg-white">
             <td class="p-4 text-lg text-black">Includes</td>
@@ -94,7 +91,6 @@ function Pass() {
             <td class="p-4 text-center text-black">10 hours of driving</td>
              <td class="p-4 text-center text-black">15 hours of driving</td>
             <td class="p-4 text-center text-black">20 hours of driving</td>
-            <td class="p-4 text-center text-black">25 hours of driving</td>
             <td class="p-4 text-center text-black">30 hours of driving</td>
           </tr>
           <tr class="even:bg-black">
@@ -110,13 +106,12 @@ function Pass() {
       </table>
     </div>
     <div className='flex justify-end pt-4'>
-    <a href='https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform' target="_blank" 
-  rel="noopener noreferrer" id='card-button' class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none">
+    <Link to='/booking' id='card-button' class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none">
             Book Now
              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
-    </a></div>
+    </Link></div>
   </div>
 </div>
   </div>

@@ -11,6 +11,9 @@ module.exports = {
       xl:"1440px"
     },
     extend: {
+      animation: {
+        'bounce-slow': 'bounce 1.5s infinite',
+      },
       colors: {
         brightGreen: 'hsl(157, 49%, 49%)'
       },

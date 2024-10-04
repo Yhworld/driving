@@ -4,6 +4,7 @@ import { FaRegAddressCard } from "react-icons/fa6";
 import { IoCalendarOutline } from "react-icons/io5";
 import { TbManualGearbox } from "react-icons/tb";
 import { IoCarSportOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 // import aboutimg from "../../assets/images/aboutimg.jpg";
 const whyImg= require('../../assets/images/aboutimg/about11_batcheditor_fotor (3).webp')
 
@@ -61,15 +62,13 @@ function About() {
                 </div>
               </div>
               <div className="mt-16">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform"
-                target="_blank" 
-  rel="noopener noreferrer"
+              <Link
+                to="/booking"
                 class="px-4 py-2 text-base font-medium text-center text-white bg-red-600 border border-transparent rounded-md hover:bg-opacity-90"
               >
                 Book Now
              
-              </a>
+              </Link>
                </div>
             </div>
           </div>

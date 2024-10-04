@@ -19,33 +19,36 @@
 }
 
 /* Base link styling */
+/* Base link styling */
 .nav-link {
-    position: relative;
-    padding-bottom: 4px; /* Padding to create space for the underline */
-    text-decoration: none;
-    transition: color 0.3s ease; /* Smooth color transition */
-  }
-  
-  /* Hover effect - Animated underline */
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(117, 240, 51);
-    transition: width 0.3s ease; /* Smooth underline transition */
-  }
-  
-  .nav-link:hover::after {
-    width: 100%; /* Animate the underline on hover */
-  }
-  
-  /* Active link - Keep the underline visible */
-  .active-link::after {
-    width: 100%; /* Static underline for active links */
-  }
+  position: relative;
+  padding-bottom: 4px; /* Padding to create space for the underline */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect - Animated underline */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: width 0.3s ease; /* Smooth underline transition */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Animate the underline on hover */
+}
+
+/* Active link - Keep the underline visible */
+.active-link::after {
+  width: 100%; /* Static underline for active links */
+  background-color: red; /* Red underline for active links */
+}
+
 
   
 

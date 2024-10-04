@@ -80,7 +80,7 @@ function Testimonial() {
               </svg>
             </div>
 
-            <p class="mt-0.5 text-lg font-medium text-gray-900">{review.name}</p>
+            {/* <p class="mt-0.5 text-lg font-medium text-gray-900">{review.name}</p> */}
           </div>
         </div>
 

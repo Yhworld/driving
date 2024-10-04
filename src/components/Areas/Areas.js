@@ -49,7 +49,7 @@ const AreasCovered = () => {
     <h2 className="container text-center mx-auto mb-5 mt-4 text-3xl font-semibold text-dark  p-2">
         Areas We Cover
     </h2>
-    <div className="areas-covered-container container mx-auto mt-12">
+    <div className="areas-covered-container container mx-auto mt-12 mb-12">
       <div className="location-list">
         {locations.map((location, index) => (
           <div
@@ -71,9 +71,9 @@ const AreasCovered = () => {
           src={`https://www.google.com/maps?q=${selectedLocation.coordinates[0]},${selectedLocation.coordinates[1]}&z=13&output=embed`}
           allowFullScreen
         ></iframe>
-      </div>
+      </div><Cta />
     </div>
-    <Cta />
+    
     </>
   );
 };

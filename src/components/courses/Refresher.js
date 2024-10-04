@@ -19,7 +19,7 @@ function Refresher() {
         </p>
         <div className="flex justify-center">
           <Link
-            to="https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform"
+            to="/booking"
             className="flex items-center justify-center px-16 py-4 text-base font-medium leading-6 text-gray-500 whitespace-no-wrap bg-white border-2 border-transparent rounded-full shadow-sm hover:bg-transparent hover:text-white hover:border-white focus:outline-none"
           >
             Get in Touch
@@ -77,9 +77,9 @@ function Refresher() {
         <tbody class="whitespace-nowrap border">
           <tr class="bg-black">
             <td class="p-4 text-lg text-white font-bold">Price</td>
-            <td class="p-4 text-center text-white font-bold">£220</td>
-            <td class="p-4 text-center text-white font-bold">£400</td>
-            <td class="p-4 text-center text-white font-bold">£525</td>
+            <td class="p-4 text-center text-white font-bold">£165</td>
+            <td class="p-4 text-center text-white font-bold">£330</td>
+            <td class="p-4 text-center text-white font-bold">£495</td>
             <td class="p-4 text-center text-white font-bold">£680</td>
             <td class="p-4 text-center text-white font-bold">£825</td>
             <td class="p-4 text-center text-white font-bold">£990</td>
@@ -107,7 +107,7 @@ function Refresher() {
       </table>
     </div>
     <div className='flex justify-end pt-4'>
-    <Link to='https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform' id='card-button' class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none">
+    <Link to='/booking' id='card-button' class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none">
             Book Now
              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -145,9 +145,9 @@ function Refresher() {
         <tbody class="whitespace-nowrap border">
           <tr class="bg-black">
             <td class="p-4 text-lg text-white font-bold">Price</td>
-            <td class="p-4 text-center text-white font-bold">£210</td>
-            <td class="p-4 text-center text-white font-bold">£350</td>
-            <td class="p-4 text-center text-white font-bold">£495</td>
+            <td class="p-4 text-center text-white font-bold">£190</td>
+            <td class="p-4 text-center text-white font-bold">£380</td>
+            <td class="p-4 text-center text-white font-bold">£570</td>
             <td class="p-4 text-center text-white font-bold">£660</td>
             <td class="p-4 text-center text-white font-bold">£805</td>
             <td class="p-4 text-center text-white font-bold">£960</td>
@@ -175,13 +175,12 @@ function Refresher() {
       </table>
     </div>
     <div className='flex justify-end pt-4'>
-    <a href='https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform' target="_blank" 
-  rel="noopener noreferrer" id='card-button' class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none">
+    <Link to='/booking' id='card-button' class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none">
             Book Now
              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
-    </a></div>
+    </Link></div>
   </div>
 </div>
   </div>

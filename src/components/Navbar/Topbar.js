@@ -16,13 +16,13 @@ function Topbar() {
   </div>
 
   <div className="flex items-center space-x-4 text-sm font-semibold text-white">
-    <a href="tel:03333222233" className='flex items-center'>
-      <CiPhone className='text-4xl pr-3 font-semibold text-blue-700' /> 033 33 22 22 33
+    <a href="tel:07301626872" className='flex items-center'>
+      <CiPhone className='text-4xl pr-3 font-semibold text-blue-700' /> 073 01 62 68 72
     </a>
   </div>
 
   <div className="flex items-center space-x-2 text-white">
-    <a href="https://wa.me/+254705350548" target="_blank" rel="noopener noreferrer" className='flex items-center'>
+    <a href="https://wa.me/+447301626872" target="_blank" rel="noopener noreferrer" className='flex items-center'>
    <FaWhatsapp className='text-3xl pr-3 font-semibold text-green-600' /> WhatsApp
     </a>
   </div>

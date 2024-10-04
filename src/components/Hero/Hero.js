@@ -1,49 +1,34 @@
-import React from 'react'
-import './hero.css'
-import { Link } from "react-scroll";
-const heropic = require('../../assets/images/hero/hero.jpg')
-
+import React from 'react';
+import { Link } from 'react-scroll';
+import heropic from '../../assets/images/hero/hero.jpg'; // Use ES6 import for the image
+import './hero.css';
 
 function Hero() {
   return (
-    <div
-    id="home"
-    className=" flex flex-col items-center justify-center px-6 mx-auto space-y-0 md:space-y-0"
-    loading="lazy"
-  >
-    <div id="main-header" className="flex flex-col mb-32 space-y-12 md:w-1/2 mt-48">
-      <h1 className="font-bold text-4xl text-white text-center md:text-6xl ">
-      Driving Made Easy.
-      </h1>
-      <p className=" text-center text-slate-200">
-      Proudly one of Manchester’s top driving schools, we offer expert lessons with a high pass rate. Our experienced instructors are here to help you master the road with confidence.
-      </p>
-      <div className="flex justify-center">
-        <Link
+    <section
+      id="home"
+      className="flex flex-col items-center justify-center px-6 mx-auto md:space-y-0"
+    >
+      <div className="flex flex-col mb-32 space-y-12 md:w-1/2 mt-48 text-center">
+        <h1 className="font-bold text-4xl text-white md:text-6xl">
+          Driving Made Easy.
+        </h1>
+        <p className="text-slate-200">
+          Proudly one of Manchester’s top driving schools, we offer expert lessons with a high pass rate. Our experienced instructors are here to help you master the road with confidence.
+        </p>
+        <div className="flex justify-center">
+          <Link
             to="services"
-            // spy={true}
             smooth={true}
             duration={400}
-          class="flex items-center justify-center px-16 py-4 text-base font-medium leading-6 text-gray-500 whitespace-no-wrap bg-white border-2 border-white rounded-full shadow-sm hover:bg-transparent hover:text-white hover:border-white focus:outline-none"
-        >
-          Learn More
-        </Link>
+            className="flex items-center justify-center px-16 py-4 text-base font-medium text-gray-500 bg-white border-2 border-white rounded-full shadow-sm hover:bg-transparent hover:text-white hover:border-white focus:outline-none"
+          >
+            Learn More
+          </Link>
+        </div>
       </div>
-    </div>
-  </div>
-
-    // <div id='hero-test' className='max-w-screen-xl container relative mx-auto'>
-    //     <div className='flex justify-around items-center'>
-    //     <div className='space-y-6  w-1/2'>
-    //         <h1 className='text-5xl font-bold'>Driving made easy.</h1>
-    //         <p className='w-3/4 text-gray-500 leading-6'>Proudly one of Manchester’s top driving schools, we offer expert lessons with a high pass rate. Our experienced instructors are here to help you master the road with confidence.</p>
-    //         <button className='bg-black mt-36 text-white py-2 px-4'>Book now</button>
-    //     </div>
-    //     <div className='hero-img w-1/2'>
-    //         <img src={heropic} alt="hero-pic" />
-    //     </div></div>
-    // </div>
-  )
+    </section>
+  );
 }
 
-export default Hero
+export default Hero;

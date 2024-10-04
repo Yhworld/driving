@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { Link } from "react-scroll";
 import logo from '../../assets/images/logo/logo.webp'; // Adjust the path as necessary
-import logo2 from '../../assets/images/logo/logo2.svg';
 import './navbar.css'
 
 function Navbar() {
@@ -16,33 +16,28 @@ function Navbar() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <nav
-      className={`md:relative ${
-        isHomepage ? 'bg-white' : 'bg-white relative'
-      } w-full z-10 p-2`}
-    >
+    <nav className={`md:relative ${isHomepage ? 'bg-white' : 'bg-white relative'} w-full z-10 p-2`}>
       <div className="max-w-screen-xl container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <NavLink to="/" onClick={closeMenu}>
-          <img alt='logo' 
-          src={`${isHomepage ? logo : logo}`}
-          id='brand'
-          className={`${isHomepage ? 'text-black' : 'text-black'}`} />
+          <img alt="logo" src={logo} id="brand" className="text-black" />
         </NavLink>
 
         <div className="hidden md:flex space-x-8 ml-10">
           <NavLink
             to="/"
-            className={`nav-link ${isHomepage ? 'text-black' : 'text-black'}`}
-            activeClassName="active-link"
+            className={({ isActive }) =>
+              `nav-link ${isActive ? 'active-link' : ''} ${isHomepage ? 'text-black' : 'text-black'}`
+            }
             onClick={closeMenu}
           >
             Home
           </NavLink>
           <NavLink
             to="/about"
-            className={`nav-link ${isHomepage ? 'text-black' : 'text-black'}`}
-            activeClassName="active-link"
+            className={({ isActive }) =>
+              `nav-link ${isActive ? 'active-link' : ''} ${isHomepage ? 'text-black' : 'text-black'}`
+            }
             onClick={closeMenu}
           >
             About
@@ -55,21 +50,21 @@ function Navbar() {
               <div className="absolute left-0 w-48 pt-2 bg-white shadow-lg rounded-md">
                 <NavLink
                   to="/beginner"
-                  className="block px-4 py-2 text-black hover:bg-gray-100"
+                  className={({ isActive }) => `block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
                   onClick={closeMenu}
                 >
                   Beginner Course
                 </NavLink>
                 <NavLink
                   to="/refresher-course"
-                  className="block px-4 py-2 text-black hover:bg-gray-100"
+                  className={({ isActive }) => `block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
                   onClick={closeMenu}
                 >
                   Refresher Course
                 </NavLink>
                 <NavLink
                   to="/crash-course"
-                  className="block px-4 py-2 text-black hover:bg-gray-100"
+                  className={({ isActive }) => `block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
                   onClick={closeMenu}
                 >
                   Crash Course
@@ -79,32 +74,33 @@ function Navbar() {
           </div>
           <NavLink
             to="/areas"
-            className={`nav-link ${isHomepage ? 'text-black' : 'text-black'}`}
-            activeClassName="border-b-2 border-brown"
+            className={({ isActive }) =>
+              `nav-link ${isActive ? 'active-link' : ''} ${isHomepage ? 'text-black' : 'text-black'}`
+            }
             onClick={closeMenu}
           >
             Areas Covered
           </NavLink>
-          <NavLink
-            to="/contact"
-            className={`nav-link ${isHomepage ? 'text-black' : 'text-black'}`}
-            activeClassName="border-b-2 border-brown"
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={400}
+            className="nav-link"
             onClick={closeMenu}
           >
             Contact Us
-          </NavLink>
+          </Link>
         </div>
 
         {/* Contact Information */}
         <div className="hidden md:flex items-center space-x-6">
-
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform"
-            target="_blank" 
-            rel="noopener noreferrer"
+          <NavLink
+            to="/booking"
             className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-red-600 rounded-full hover:bg-red-700 focus:shadow-outline focus:outline-none"
           >
             Book Now
-          </a>
+          </NavLink>
         </div>
 
         {/* Mobile Menu Button */}
@@ -157,14 +153,14 @@ function Navbar() {
           <div className="mt-24">
             <NavLink
               to="/"
-              className="block px-4 py-4 text-2xl text-black hover:bg-gray-100"
+              className={({ isActive }) => `nav-link block px-4 py-4 text-2xl text-black ${isActive ? 'active-link' : ''}`}
               onClick={closeMenu}
             >
               Home
             </NavLink>
             <NavLink
               to="/about"
-              className="block px-4 py-4 text-2xl text-black hover:bg-gray-100"
+              className={({ isActive }) => `nav-link block px-4 py-4 text-2xl text-black ${isActive ? 'active-link' : ''}`}
               onClick={closeMenu}
             >
               About
@@ -177,21 +173,21 @@ function Navbar() {
                 <div className="bg-white shadow-lg rounded-md">
                   <NavLink
                     to="/beginner"
-                    className="block px-4 py-2 text-black hover:bg-gray-100"
+                    className={({ isActive }) => `nav-link block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
                     onClick={closeMenu}
                   >
                     Beginner Course
                   </NavLink>
                   <NavLink
                     to="/refresher-course"
-                    className="block px-4 py-2 text-black hover:bg-gray-100"
+                    className={({ isActive }) => `nav-link block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
                     onClick={closeMenu}
                   >
                     Refresher Course
                   </NavLink>
                   <NavLink
                     to="/crash-course"
-                    className="block px-4 py-2 text-black hover:bg-gray-100"
+                    className={({ isActive }) => `nav-link block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
                     onClick={closeMenu}
                   >
                     Crash Course
@@ -201,27 +197,28 @@ function Navbar() {
             </div>
             <NavLink
               to="/areas"
-              className="block px-4 py-4 text-2xl text-black hover:bg-gray-100"
+              className={({ isActive }) => `nav-link block px-4 py-4 text-2xl text-black ${isActive ? 'active-link' : ''}`}
               onClick={closeMenu}
             >
               Areas Covered
             </NavLink>
-            <NavLink
-              to="/contact"
-              className="block px-4 py-4 text-2xl text-black hover:bg-gray-100"
+            <Link
+              to="contact"
+              smooth={true}
+              spy={true}
+              duration={400}
+              className="nav-link block px-4 py-4 text-2xl text-black hover:bg-gray-100"
               onClick={closeMenu}
             >
               Contact Us
-            </NavLink>
+            </Link>
 
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeSmQ3c0Dx8OgIxvahK_uO4lWq3Ze9NaQN4Q2NZMOzojVqF-Q/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
+            <NavLink
+              to="/booking"
               className="inline-flex items-center justify-center h-12 px-6 mt-10 font-medium tracking-wide text-white transition duration-200 bg-red-600 rounded-full hover:bg-red-700 focus:shadow-outline focus:outline-none"
             >
               Book Now
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
