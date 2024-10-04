@@ -100,7 +100,6 @@ function Pass() {
             <td class="p-4 text-center">Flexible</td>
             <td class="p-4 text-center">Flexible</td>
             <td class="p-4 text-center">Flexible</td>
-            <td class="p-4 text-center">Flexible</td>
           </tr>
         </tbody>
       </table>
