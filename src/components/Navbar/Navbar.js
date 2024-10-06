@@ -81,16 +81,13 @@ function Navbar() {
           >
             Areas Covered
           </NavLink>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={400}
+          <NavLink
+            to="/contact"
             className="nav-link"
             onClick={closeMenu}
           >
             Contact Us
-          </Link>
+          </NavLink>
         </div>
 
         {/* Contact Information */}
@@ -202,16 +199,13 @@ function Navbar() {
             >
               Areas Covered
             </NavLink>
-            <Link
-              to="contact"
-              smooth={true}
-              spy={true}
-              duration={400}
+            <NavLink
+              to="/contact"
               className="nav-link block px-4 py-4 text-2xl text-black hover:bg-gray-100"
               onClick={closeMenu}
             >
               Contact Us
-            </Link>
+            </NavLink>
 
             <NavLink
               to="/booking"
