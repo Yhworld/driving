@@ -87,7 +87,7 @@ function Beginner() {
     </div> */}
 
     <div class="overflow-x-auto mt-16">
-      <table class="min-w-full border">
+    <table class="min-w-full border">
         <thead class="whitespace-nowrap">
           <tr class="h-24">
             <th class="text-gray-800 px-2 py-1 font-semibold text-lg">Package</th>
@@ -103,12 +103,12 @@ function Beginner() {
         <tbody class="whitespace-nowrap border">
           <tr class="bg-black">
             <td class="p-4 text-lg text-white font-bold">Price</td>
-            <td class="p-4 text-center text-white font-bold">£165</td>
-            <td class="p-4 text-center text-white font-bold">£330</td>
-            <td class="p-4 text-center text-white font-bold">£495</td>
-            <td class="p-4 text-center text-white font-bold">£680</td>
-            <td class="p-4 text-center text-white font-bold">£825</td>
-            <td class="p-4 text-center text-white font-bold">£990</td>
+            <td class="p-4 text-center text-white font-bold">£190</td>
+            <td class="p-4 text-center text-white font-bold">£380</td>
+            <td class="p-4 text-center text-white font-bold">£570</td>
+            <td class="p-4 text-center text-white font-bold">£660</td>
+            <td class="p-4 text-center text-white font-bold">£805</td>
+            <td class="p-4 text-center text-white font-bold">£960</td>
           </tr>
           <tr class="even:bg-white">
             <td class="p-4 text-lg text-black">Includes</td>
@@ -156,7 +156,7 @@ function Beginner() {
     </div> */}
 
     <div class="overflow-x-auto mt-16">
-      <table class="min-w-full border">
+    <table class="min-w-full border">
         <thead class="whitespace-nowrap">
           <tr class="h-24">
             <th class="text-gray-800 px-2 py-1 font-semibold text-lg">Package</th>
@@ -172,12 +172,12 @@ function Beginner() {
         <tbody class="whitespace-nowrap border">
           <tr class="bg-black">
             <td class="p-4 text-lg text-white font-bold">Price</td>
-            <td class="p-4 text-center text-white font-bold">£190</td>
-            <td class="p-4 text-center text-white font-bold">£380</td>
-            <td class="p-4 text-center text-white font-bold">£570</td>
-            <td class="p-4 text-center text-white font-bold">£660</td>
-            <td class="p-4 text-center text-white font-bold">£805</td>
-            <td class="p-4 text-center text-white font-bold">£960</td>
+            <td class="p-4 text-center text-white font-bold">£165</td>
+            <td class="p-4 text-center text-white font-bold">£330</td>
+            <td class="p-4 text-center text-white font-bold">£495</td>
+            <td class="p-4 text-center text-white font-bold">£680</td>
+            <td class="p-4 text-center text-white font-bold">£825</td>
+            <td class="p-4 text-center text-white font-bold">£990</td>
           </tr>
           <tr class="even:bg-white">
             <td class="p-4 text-lg text-black">Includes</td>
