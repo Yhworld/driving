@@ -44,7 +44,7 @@ function Contact() {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <span>Yhworld</span>
+              <span>M16 7JH</span>
             </p>
             <p className="flex items-center">
               <svg
