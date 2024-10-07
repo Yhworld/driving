@@ -49,6 +49,50 @@ function Refresher() {
         </div>
         <section class="bg-white mt-24">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <div class="text-center mb-8 lg:mb-12">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Pay As You Go</h2>
+      <p class="mb-5 font-light text-gray-800 sm:text-xl">
+        Choose our flexible Pay As You Go options for Manual and Automatic driving courses.
+      </p>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-center items-start space-x-0 md:space-x-4 mt-8">
+  
+      <div class="max-w-sm bg-white rounded-lg p-6 w-full md:w-80">
+        <h3 class="mb-4 text-2xl font-extrabold text-gray-900">Manual Course</h3>
+        <p class="text-lg text-gray-800">90 Minutes</p>
+        <p class="mb-4 text-3xl font-bold text-gray-900">£52.50</p>
+        <p class="text-lg text-gray-800">120 Minutes</p>
+        <p class="mb-4 text-3xl font-bold text-gray-900">£70</p>
+      </div>
+
+  
+      <div class="hidden md:flex items-center justify-center">
+        <div class="h-64 border-l-2 border-gray-300 mx-4"></div>
+      </div>
+
+    
+      <div class="max-w-sm bg-white rounded-lg p-6 w-full md:w-80">
+        <h3 class="mb-4 text-2xl font-extrabold text-gray-900">Automatic Course</h3>
+        <p class="text-lg text-gray-800">90 Minutes</p>
+        <p class="mb-4 text-3xl font-bold text-gray-900">£50</p>
+        <p class="text-lg text-gray-800">120 Minutes</p>
+        <p class="mb-4 text-3xl font-bold text-gray-900">£76</p>
+      </div>
+    </div>
+
+    <div class="flex pl-6 md:pl-0 md:justify-end pt-4">
+      <Link to='/booking' id='card-button' class="inline-flex items-center justify-center py-2 px-4 text-sm font-bold text-center text-white bg-black rounded hover:bg-gray-800">
+        Book Now
+        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+      </Link>
+    </div>
+  </div>
+</section>
+        <section class="bg-white mt-24">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Automatic Course</h2>
           <p class="mb-5 font-light text-gray-800  sm:text-xl ">At Make it, we specialize in equipping students with the essential skills to drive automatic cars confidently and safely.</p>

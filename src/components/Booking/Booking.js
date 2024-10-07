@@ -83,7 +83,16 @@ function BookingForm() {
         }
       );
   };
-  
+
+  // Determine min and max hours based on the selected course
+  const getHoursConstraints = () => {
+    if (formData.course === 'pay') {
+      return { min: 2, max: 3 }; // For "Pay as you go"
+    }
+    return { min: 5, max: 50 }; // For other courses
+  };
+
+  const { min, max } = getHoursConstraints();
 
   return (
     <div className="max-w-2xl mx-auto mb-24">
@@ -174,6 +183,7 @@ function BookingForm() {
               className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:ring-red-500 focus:border-red-500"
             >
               <option value="">Select Course</option>
+              <option value="pay">Pay as you go</option>
               <option value="Beginner">Beginner Course</option>
               <option value="Refresher">Refresher Course</option>
               <option value="Crash">Intensive Crash Course</option>
@@ -202,8 +212,8 @@ function BookingForm() {
             <input
               type="number"
               name="hours"
-              min="5"
-              max="50"
+              min={min}
+              max={max}
               value={formData.hours}
               onChange={handleChange}
               required
@@ -230,23 +240,26 @@ function BookingForm() {
             <label className="block text-sm font-medium text-gray-700">Available Days of the Week:</label>
             <div className="mt-2 grid grid-cols-3 gap-4">
               {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => (
-                <label key={day} className="flex items-center">
+                <div key={day}>
                   <input
                     type="checkbox"
                     value={day}
                     checked={formData.availableDays.includes(day)}
                     onChange={handleDaysChange}
-                    className="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded"
+                    className="mr-2"
                   />
-                  <span className="ml-2 text-gray-700">{day}</span>
-                </label>
+                  <span>{day}</span>
+                </div>
               ))}
             </div>
           </div>
+        </div>
 
+        {/* Submit Button */}
+        <div className="mt-6">
           <button
             type="submit"
-            className="mt-6 w-full bg-red-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-red-700 transition duration-200"
+            className="w-full bg-red-600 text-white font-semibold py-2 rounded-md shadow-lg hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
           >
             Submit Booking
           </button>
