@@ -5,7 +5,7 @@ import './hero.css';  // Image now handled via CSS for better control
 function Hero() {
   useEffect(() => {
     const img = new Image();
-    img.src = require('../../assets/images/hero/hero.jpg');  // Using compressed webp image
+    img.src = require('../../assets/images/hero/hero.webp');  // Using compressed webp image
     img.onload = () => {
       document.getElementById('home').classList.add('loaded');
     };

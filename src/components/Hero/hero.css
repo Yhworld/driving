@@ -9,7 +9,7 @@
 }
 
 #home {
-    background-image:linear-gradient(rgba(12, 12, 12, 0.448) 21.84%, rgba(12, 12, 12, 0.671) 71.03%), url('../../assets/images/hero/hero.jpg');
+    background-image:linear-gradient(rgba(12, 12, 12, 0.448) 21.84%, rgba(12, 12, 12, 0.671) 71.03%), url('../../assets/images/hero/hero.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;

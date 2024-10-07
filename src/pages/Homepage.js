@@ -37,7 +37,7 @@ function HomePage() {
 
       {/* Lazy load Services to reduce initial load */}
       <Suspense fallback={<Loader />}>
-        <div data-aos="fade-up" data-aos-delay="200">
+        <div>
           <Services />
         </div>
       </Suspense>

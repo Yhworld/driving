@@ -49,7 +49,7 @@ function Services() {
                   id="card-button"
                   className="inline-flex items-center py-2 text-sm font-bold text-center text-red-500 focus:outline-none"
                 >
-                  Read more
+                  View Course
                   <svg
                     className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                     aria-hidden="true"

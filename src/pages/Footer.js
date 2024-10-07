@@ -30,10 +30,10 @@ function Footer() {
 
         {/* Social Media Links */}
         <div class="flex justify-center space-x-6 mb-6">
-          <a href="https://www.instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/makeitdrivingschool" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="text-2xl text-gray-900 dark:text-white hover:text-red-600" />
           </a>
-          <a href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.tiktok.com/@makeitdriving" target="_blank" rel="noopener noreferrer">
             <FaTiktok className="text-2xl text-gray-900 dark:text-white hover:text-red-600" />
           </a>
         </div>

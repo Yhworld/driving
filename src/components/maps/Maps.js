@@ -24,7 +24,7 @@ Drop by to meet our team or get a feel for the quality of our driving school.
                 loading="lazy"
               ></iframe>
             </div>
-            {/* Address Section - Occupies 1/3 */}
+           
             <div>
               <div className="max-w-full mx-auto rounded-lg overflow-hidden">
                 <div className="px-6 py-4">
@@ -32,7 +32,7 @@ Drop by to meet our team or get a feel for the quality of our driving school.
                     Our Address
                   </h3>
                   <p className="mt-1 text-gray-600">
-                    123 Main St, Manchester, M16 7JH
+                    M16 7JH
                   </p>
                 </div>
                 <div className="border-t border-gray-200 px-6 py-4">
@@ -45,8 +45,8 @@ Drop by to meet our team or get a feel for the quality of our driving school.
                 </div>
                 <div className="border-t border-gray-200 px-6 py-4">
                   <h3 className="text-lg font-medium text-red-500">Contact</h3>
-                  <p className="mt-1 text-gray-600">Email: info@drivingschool.com</p>
-                  <p className="mt-1 text-gray-600">Phone: +44 1234 567890</p>
+                  <p className="mt-1 text-gray-600">Email: makeitdrivingschool@gmail.com</p>
+                  <p className="mt-1 text-gray-600">Phone: +44 7301 626872</p>
                 </div>
               </div>
             </div>

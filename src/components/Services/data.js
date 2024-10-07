@@ -1,7 +1,7 @@
 // data.js
-import service1 from '../../assets/images/serviceImg/person-taking-driver-s-license-exam-min.webp'
+import service1 from '../../assets/images/serviceImg/person-taking-driver-s-license-exam-min (1).webp'
 import service3 from '../../assets/images/serviceImg/Leonardo_Phoenix_A_warm_and_inviting_image_of_a_young_adult_fe_3.webp'
-import service2 from '../../assets/images/serviceImg/happy-charismatic-man-driving-car-min (1).jpg'
+import service2 from '../../assets/images/serviceImg/happy-charismatic-man-driving-car-min (1).webp'
 
 
 

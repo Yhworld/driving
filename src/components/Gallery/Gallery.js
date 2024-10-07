@@ -22,9 +22,9 @@ const Gallery = () => {
     <div className='container mx-auto p-4'>
         <div className='flex flex-col items-center pb-16'>
   <h2 className="text-center font-semibold text-primary text-red-500 sm:text-1xl">
-    Our Proud Graduates
+    Our Proud Learners
   </h2>
-  <p className='text-dark-6 mt-6 text-4xl font-bold text-center'>Celebrating Success in Driving Exams</p>
+  <p className='text-dark-6 mt-6 text-4xl font-bold text-center'>Celebrating Success in Driving Test</p>
   <p className='hidden md:block text-dark-6 text-4xl font-bold text-center'>See Our Students' Achievements</p>
 </div>
 
