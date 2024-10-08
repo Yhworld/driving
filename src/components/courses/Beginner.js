@@ -101,7 +101,7 @@ function Beginner() {
       <div class="max-w-sm bg-white rounded-lg p-6 w-full md:w-80">
         <h3 class="mb-4 text-2xl font-extrabold text-gray-900">Automatic Course</h3>
         <p class="text-lg text-gray-800">90 Minutes</p>
-        <p class="mb-4 text-3xl font-bold text-gray-900">£50</p>
+        <p class="mb-4 text-3xl font-bold text-gray-900">£57</p>
         <p class="text-lg text-gray-800">120 Minutes</p>
         <p class="mb-4 text-3xl font-bold text-gray-900">£76</p>
       </div>
