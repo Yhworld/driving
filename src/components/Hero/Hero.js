@@ -24,6 +24,9 @@ function Hero() {
           Proudly one of Manchester’s top driving schools, we offer expert lessons with a high pass rate. Our experienced instructors are here to help you master the road with confidence.
         </p>
         <div className="flex justify-center">
+        <div id="services-anchor" style={{ display: 'none' }}>
+  <a href="#services">Services</a>
+</div>
           <Link
             to="services"
             smooth={true}
