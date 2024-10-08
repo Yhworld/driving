@@ -1,15 +1,19 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-scroll';
-import './hero.css';  // Image now handled via CSS for better control
+import React from 'react';
+import './hero.css';
 
 function Hero() {
-  useEffect(() => {
-    const img = new Image();
-    img.src = require('../../assets/images/hero/hero.webp');  // Using compressed webp image
-    img.onload = () => {
-      document.getElementById('home').classList.add('loaded');
-    };
-  }, []);
+  const scrollToSection = (event) => {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute('href').slice(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
     <section
@@ -24,17 +28,13 @@ function Hero() {
           Proudly one of Manchester’s top driving schools, we offer expert lessons with a high pass rate. Our experienced instructors are here to help you master the road with confidence.
         </p>
         <div className="flex justify-center">
-        <div id="services-anchor" style={{ display: 'none' }}>
-  <a href="#services">Services</a>
-</div>
-          <Link
-            to="services"
-            smooth={true}
-            duration={400}
+          <a
+            href="#services"
+            onClick={scrollToSection}
             className="flex items-center justify-center px-16 py-4 text-base font-medium text-gray-500 bg-white border-2 border-white rounded-full shadow-sm hover:bg-transparent hover:text-white hover:border-white focus:outline-none"
           >
             Learn More
-          </Link>
+          </a>
         </div>
       </div>
     </section>
