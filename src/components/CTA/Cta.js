@@ -6,7 +6,7 @@ function Cta() {
     <section className="flex flex-col items-center justify-center container rounded-lg relative mx-auto mt-16 md:mt-32 bg-red-600 p-8 md:p-16 lg:p-32">
       <div className="w-full md:w-3/4 flex flex-col items-center text-center">
         <h2 className="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-white">
-          What are you waiting for? Book now.
+        Book Driving Lessons in Manchester Today.
         </h2>
         <Link
           to="/booking"

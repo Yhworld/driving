@@ -22,11 +22,12 @@ function Hero() {
     >
       <div className="flex flex-col mb-32 space-y-12 md:w-1/2 mt-48 text-center">
         <h1 className="font-bold text-4xl text-white md:text-6xl">
-          Driving Made Easy.
+          Driving Made Easy in Manchester.
         </h1>
         <p className="text-slate-200">
-          Proudly one of Manchester’s top driving schools, we offer expert lessons with a high pass rate. Our experienced instructors are here to help you master the road with confidence.
-        </p>
+        Makeit Driving is a top Manchester driving school offering expert manual and automatic lessons, high pass rates, experienced instructors, and flexible schedules.
+</p>
+
         <div className="flex justify-center">
           <a
             href="#services"

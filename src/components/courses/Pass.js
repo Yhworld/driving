@@ -15,7 +15,7 @@ function Pass() {
         intensive Crash Course
         </h1>
         <p className=" text-center text-slate-200">
-        Start your driving journey with Manchester's trusted school. Our beginner driving course will help you build confidence on the road. Book your first lesson today!
+        Start your driving journey with Manchester's trusted school. Our MakeIt crash course will help you build confidence on the road quick. Book your first lesson today!
         </p>
         <div className="flex justify-center">
           <Link

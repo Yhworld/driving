@@ -39,7 +39,7 @@ function Refresher() {
               What Our Refresher Driving Course Offers
               </h2>
               <p className="mb-5 text-base text-body-color dark:text-dark-6">
-              The Refresher Course is designed for drivers who already have their license but may need extra confidence or practice behind the wheel. Whether you’ve taken a break from driving, are unfamiliar with Manchester’s busy roads, or want to update your driving skills, this course helps you regain your confidence and ensures you're driving safely.
+              MakeIt Refresher Course is designed for drivers who already have their license but may need extra confidence or practice behind the wheel. Whether you’ve taken a break from driving, are unfamiliar with Manchester’s busy roads, or want to update your driving skills, this course helps you regain your confidence and ensures you're driving safely.
               </p>
               <p className="mb-8 text-base text-body-color dark:text-dark-6">
                 We offer flexible lesson times and expert instructors to make your learning process enjoyable and successful. Let's help you get on the road to your driving goals!

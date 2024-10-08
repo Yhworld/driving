@@ -65,7 +65,7 @@ function Beginner() {
               What Our Beginner Driving Course Offers
               </h2>
               <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                Our beginner course is designed for new drivers who want to gain confidence and skills behind the wheel. Learn essential driving techniques, rules of the road, and vehicle control in a safe and supportive environment. Whether you’ve never driven before or need to brush up on basics, our certified instructors will guide you through every step.
+                At MakeIt our course is designed for new drivers in manchester who want to gain confidence and skills behind the wheel. Learn essential driving techniques, rules of the road, and vehicle control in a safe and supportive environment. Whether you’ve never driven before or need to brush up on basics, our certified instructors will guide you through every step.
               </p>
               <p className="mb-8 text-base text-body-color dark:text-dark-6">
                 We offer flexible lesson times and expert instructors to make your learning process enjoyable and successful. Let's help you get on the road to your driving goals!
