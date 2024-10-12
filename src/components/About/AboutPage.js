@@ -28,7 +28,7 @@ function AboutPage() {
         <div className="flex lg:flex-row flex-col gap-8 justify-center text-center mt-24">
           <div className="w-full lg:w-5/12 flex flex-col justify-center">
             <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
-              Our Mission at Makeit Driving School
+              Our Mission at MakeitDriving School
             </h1>
             <p className="font-normal text-base leading-6 text-gray-600">
               Our mission is simple: to empower every learner with the skills and knowledge needed to become a safe, confident driver. As a certified driving school in <strong>Manchester</strong>, we take pride in offering the most comprehensive driving training, designed to help you navigate the roads with ease.
