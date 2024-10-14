@@ -30,6 +30,19 @@ function App() {
           name="description"
           content="Makeit Driving is a trusted driving school in Manchester. We offer tailored driving lessons to suit your needs, ensuring you become a confident and safe driver."
         />
+        {/* Open Graph and Twitter meta tags for social sharing */}
+        <meta property="og:title" content="Makeit Driving - Learn to Drive with Confidence" />
+        <meta
+          property="og:description"
+          content="Top Manchester driving school offering expert manual and automatic lessons with high pass rates."
+        />
+        {/* Referencing logo192.png */}
+        <meta property="og:image" content={`${process.env.PUBLIC_URL}/logo192.png`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={`${process.env.PUBLIC_URL}/logo192.png`} />
       </Helmet>
 
       <Topbar />
@@ -45,6 +58,7 @@ function App() {
               <>
                 <Helmet>
                   <title>Makeit Driving - Your Road to Success Starts Here</title>
+                  <meta property="og:title" content="Makeit Driving - Your Road to Success Starts Here" />
                 </Helmet>
                 <Homepage />
               </>
@@ -56,6 +70,7 @@ function App() {
               <>
                 <Helmet>
                   <title>Beginner Driving Course - Start Learning Today | Makeit Driving</title>
+                  <meta property="og:title" content="Beginner Driving Course - Start Learning Today | Makeit Driving" />
                 </Helmet>
                 <Beginner />
               </>
@@ -67,6 +82,7 @@ function App() {
               <>
                 <Helmet>
                   <title>Refresher Driving Course - Boost Your Confidence | Makeit Driving</title>
+                  <meta property="og:title" content="Refresher Driving Course - Boost Your Confidence | Makeit Driving" />
                 </Helmet>
                 <Refresher />
               </>
@@ -78,6 +94,7 @@ function App() {
               <>
                 <Helmet>
                   <title>Crash Course - Fast Track to Your License | Makeit Driving</title>
+                  <meta property="og:title" content="Crash Course - Fast Track to Your License | Makeit Driving" />
                 </Helmet>
                 <Pass />
               </>
@@ -89,6 +106,7 @@ function App() {
               <>
                 <Helmet>
                   <title>About Makeit Driving - Your Trusted Manchester Driving School</title>
+                  <meta property="og:title" content="About Makeit Driving - Your Trusted Manchester Driving School" />
                 </Helmet>
                 <AboutPage />
               </>
@@ -100,6 +118,7 @@ function App() {
               <>
                 <Helmet>
                   <title>Driving Lessons in Your Area - Makeit Driving</title>
+                  <meta property="og:title" content="Driving Lessons in Your Area - Makeit Driving" />
                 </Helmet>
                 <Areas />
               </>
@@ -111,6 +130,7 @@ function App() {
               <>
                 <Helmet>
                   <title>Book Your Driving Lessons Today | Makeit Driving</title>
+                  <meta property="og:title" content="Book Your Driving Lessons Today | Makeit Driving" />
                 </Helmet>
                 <BookingForm />
               </>
@@ -122,6 +142,7 @@ function App() {
               <>
                 <Helmet>
                   <title>Contact Us - Makeit Driving</title>
+                  <meta property="og:title" content="Contact Us - Makeit Driving" />
                 </Helmet>
                 <Contact />
               </>
@@ -133,6 +154,7 @@ function App() {
               <>
                 <Helmet>
                   <title>Page Not Found - Makeit Driving</title>
+                  <meta property="og:title" content="Page Not Found - Makeit Driving" />
                 </Helmet>
                 <NotFound />
               </>
