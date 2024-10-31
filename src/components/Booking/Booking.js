@@ -166,11 +166,11 @@ function BookingForm() {
               className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:ring-red-500 focus:border-red-500"
             >
               <option value="">Select Course</option>
-              <option value="pay">Pay as you go</option>
+              <option value="pay as you go">Pay as you go</option>
               <option value="Beginner">Beginner Course</option>
               <option value="Refresher">Refresher Course</option>
               <option value="Crash">Intensive Crash Course</option>
-              <option value="DrivingFees">Driving Fees</option> {/* Added Driving Fees option */}
+              <option value="Driving Test Fees">Driving Test Fees</option>
             </select>
           </div>
 
@@ -195,14 +195,15 @@ function BookingForm() {
               name="hours"
               value={formData.hours}
               onChange={handleChange}
+              disabled={formData.course === 'Driving Test Fees'}
               required
               className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:ring-red-500 focus:border-red-500"
             >
               <option value="">Select Hours</option>
-              {/* Hours condition based on course selection */}
-              {(formData.course === 'pay' ? [1, 2] : 
-                formData.course === 'DrivingFees' ? [1] : 
-                [1, 2, 5, 10, 15, 20, 25, 30]
+              {/* Conditional hours based on selected course */}
+              {(formData.course === 'pay as you go' ? [1, 2] : 
+                formData.course === 'Driving Test Fees' ? [] : 
+                [5, 10, 15, 20, 25, 30]
               ).map((hour) => (
                 <option key={hour} value={hour}>
                   {hour} hours
@@ -225,23 +226,22 @@ function BookingForm() {
           </div>
 
           <div>
-  <label className="block text-sm font-medium text-gray-700">Available Days of the Week:</label>
-  <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-    {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => (
-      <div key={day}>
-        <input
-          type="checkbox"
-          value={day}
-          checked={formData.availableDays.includes(day)}
-          onChange={handleDaysChange}
-          className="mr-2"
-        />
-        <label>{day}</label>
-      </div>
-    ))}
-  </div>
-</div>
-
+            <label className="block text-sm font-medium text-gray-700">Available Days of the Week:</label>
+            <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => (
+                <div key={day}>
+                  <input
+                    type="checkbox"
+                    value={day}
+                    checked={formData.availableDays.includes(day)}
+                    onChange={handleDaysChange}
+                    className="mr-2"
+                  />
+                  <label>{day}</label>
+                </div>
+              ))}
+            </div>
+          </div>
 
           {/* Additional Requests */}
           <div>
@@ -252,17 +252,17 @@ function BookingForm() {
               onChange={handleChange}
               placeholder="Any specific requirements?"
               rows="3"
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:ring-red-500 focus:border-red-500"
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-black"
             />
           </div>
-        </div>
 
-        <button
-          type="submit"
-          className="mt-6 w-full bg-red-600 text-white font-bold py-2 px-4 rounded-md hover:bg-red-700 transition-colors duration-200"
-        >
-          Submit Booking
-        </button>
+          <button
+            type="submit"
+            className="w-full py-2 px-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50"
+          >
+            Submit Booking
+          </button>
+        </div>
       </form>
     </div>
   );

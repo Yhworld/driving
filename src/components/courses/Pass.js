@@ -33,7 +33,7 @@ function Pass() {
         <section class="bg-white mt-24">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Crash Course Pricing</h2>
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Crash Course (Automatic and Manual) Pricing</h2>
           <p class="mb-5 font-light text-gray-800  sm:text-xl ">At Make it, we specialize in equipping students with the essential skills to drive cars confidently and safely.</p>
       </div>
       <div class="font-[sans-serif]">

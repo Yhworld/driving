@@ -118,6 +118,60 @@ function Beginner() {
   </div>
 </section>
 
+<section className="bg-white py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+  <div className="text-center mb-8 lg:mb-12">
+    <h2 className="text-4xl font-extrabold text-gray-900">Driving Test Fees</h2>
+    <p className="mt-6 font-light text-gray-800 sm:text-xl">
+      We charge £100 for the driving test, which includes:
+    </p>
+  </div>
+  <div className="max-w-lg mx-auto bg-gray-50 rounded-lg shadow-md">
+    <ul className="list-disc pl-5 space-y-6 text-gray-800">
+      <li>
+        <span className="font-semibold">One-Hour Lesson:</span> A comprehensive lesson prior to your test to help you prepare.
+      </li>
+      <li>
+        <span className="font-semibold">Use of Vehicle:</span> Access to our vehicle during the test, ensuring you have a reliable and suitable car.
+      </li>
+    </ul>
+  </div>
+  <div className="max-w-lg mx-auto bg-yellow-50 border border-yellow-300 mt-6 p-4 rounded-lg shadow-md text-gray-800 flex items-start space-x-2">
+    <svg className="w-6 h-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h.01M12 8h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+    </svg>
+    <p className="text-sm font-medium leading-relaxed">
+      <strong className="block">Important:</strong> 
+      Fees may vary based on your test location, so it’s advisable to check for any additional charges specific to your area.
+      <br />
+      If you have any questions or need to book your test, feel free to reach out!
+    </p>
+  </div>
+  <div className="flex justify-end pt-4">
+    <Link
+      to="/booking"
+      id="card-button"
+      className="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none"
+    >
+      Book Now
+      <svg
+        className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 14 10"
+      >
+        <path
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M1 5h12m0 0L9 1m4 4L9 9"
+        />
+      </svg>
+    </Link>
+  </div>
+</section>
+
 
 
         <section class="bg-white mt-24">
@@ -262,30 +316,6 @@ function Beginner() {
 </div>
   </div>
 </section>
-<section className="bg-white  py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div className="text-center mb-8 lg:mb-12">
-          <h2 className="text-4xl font-extrabold text-gray-900">Driving Test Fees</h2>
-          <p className="mt-6 font-light text-gray-800 sm:text-xl">
-            We charge £100 for the driving test, which includes:
-          </p>
-        </div>
-        <div className="max-w-lg mx-auto bg-gray-50 rounded-lg shadow-md">
-          <ul className="list-disc pl-5 space-y-6 text-gray-800">
-            <li><span className="font-semibold text">One-Hour Lesson:</span> A comprehensive lesson prior to your test to help you prepare.</li>
-            <li><span className="font-semibold">Use of Vehicle:</span> Access to our vehicle during the test, ensuring you have a reliable and suitable car.</li>
-          </ul>
-        </div>
-        <div className='flex justify-end pt-4'>
-    <Link to='/booking' 
-    id='card-button' 
-    class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none"
-    >
-            Book Now
-             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-    </Link></div>
-      </section>
       </div>
       <Cta />
     </section>
