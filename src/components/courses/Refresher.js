@@ -75,9 +75,9 @@ function Refresher() {
       <div class="max-w-sm bg-white rounded-lg p-6 w-full md:w-80">
         <h3 class="mb-4 text-2xl font-extrabold text-gray-900">Automatic Course</h3>
         <p class="text-lg text-gray-800">90 Minutes</p>
-        <p class="mb-4 text-3xl font-bold text-gray-900">£57</p>
+        <p class="mb-4 text-3xl font-bold text-gray-900">£60</p>
         <p class="text-lg text-gray-800">120 Minutes</p>
-        <p class="mb-4 text-3xl font-bold text-gray-900">£76</p>
+        <p class="mb-4 text-3xl font-bold text-gray-900">£80</p>
       </div>
     </div>
 
@@ -89,144 +89,6 @@ function Refresher() {
         </svg>
       </Link>
     </div>
-  </div>
-</section>
-        <section class="bg-white mt-24">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Automatic Course</h2>
-          <p class="mb-5 font-light text-gray-800  sm:text-xl ">At Make it, we specialize in equipping students with the essential skills to drive automatic cars confidently and safely.</p>
-      </div>
-      <div class="font-[sans-serif]">
-  <div class="max-w-6xl mx-auto">
-    {/* <div class="text-center">
-      <h2 class="text-gray-800 text-3xl font-bold mb-3">Automatic Driving Lessons Pricing</h2>
-      <p class="text-sm text-gray-800 ">Choose a package that suits your needs</p>
-    </div> */}
-
-    <div class="overflow-x-auto mt-16">
-    <table class="min-w-full border">
-        <thead class="whitespace-nowrap">
-          <tr class="h-24">
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg">Package</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">5 Hours</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">10 Hours</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">15 Hours</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">20 Hours</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">25 Hours</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">30 Hours</th>
-          </tr>
-        </thead>
-
-        <tbody class="whitespace-nowrap border">
-          <tr class="bg-black">
-            <td class="p-4 text-lg text-white font-bold">Price</td>
-            <td class="p-4 text-center text-white font-bold">£190</td>
-            <td class="p-4 text-center text-white font-bold">£380</td>
-            <td class="p-4 text-center text-white font-bold">£570</td>
-            <td class="p-4 text-center text-white font-bold">£660</td>
-            <td class="p-4 text-center text-white font-bold">£805</td>
-            <td class="p-4 text-center text-white font-bold">£960</td>
-          </tr>
-          <tr class="even:bg-white">
-            <td class="p-4 text-lg text-black">Includes</td>
-            
-            <td class="p-4 text-center text-black">5 hours of driving</td>
-            <td class="p-4 text-center text-black">10 hours of driving</td>
-             <td class="p-4 text-center text-black">15 hours of driving</td>
-            <td class="p-4 text-center text-black">20 hours of driving</td>
-            <td class="p-4 text-center text-black">25 hours of driving</td>
-            <td class="p-4 text-center text-black">30 hours of driving</td>
-          </tr>
-          <tr class="even:bg-black">
-            <td class="p-4 text-lg text-black">Duration</td>
-            <td class="p-4 text-center">Flexible</td>
-            <td class="p-4 text-center">Flexible</td>
-            <td class="p-4 text-center">Flexible</td>
-            <td class="p-4 text-center">Flexible</td>
-            <td class="p-4 text-center">Flexible</td>
-            <td class="p-4 text-center">Flexible</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div className='flex justify-end pt-4'>
-    <Link to='/booking' id='card-button' class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none">
-            Book Now
-             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-    </Link></div>
-  </div>
-</div>
-  </div>
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Manual Course</h2>
-          <p class="mb-5 font-light text-gray-800  sm:text-xl ">At Make it, we specialize in equipping students with the essential skills to drive Manual cars confidently and safely.</p>
-      </div>
-      <div class="font-[sans-serif]">
-  <div class="max-w-6xl mx-auto">
-    {/* <div class="text-center">
-      <h2 class="text-gray-800 text-3xl font-bold mb-3">Automatic Driving Lessons Pricing</h2>
-      <p class="text-sm text-gray-800 ">Choose a package that suits your needs</p>
-    </div> */}
-
-    <div class="overflow-x-auto mt-16">
-    <table class="min-w-full border">
-        <thead class="whitespace-nowrap">
-          <tr class="h-24">
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg">Package</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">5 Hours</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">10 Hours</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">15 Hours</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">20 Hours</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">25 Hours</th>
-            <th class="text-gray-800 px-2 py-1 font-semibold text-lg w-48">30 Hours</th>
-          </tr>
-        </thead>
-
-        <tbody class="whitespace-nowrap border">
-          <tr class="bg-black">
-            <td class="p-4 text-lg text-white font-bold">Price</td>
-            <td class="p-4 text-center text-white font-bold">£165</td>
-            <td class="p-4 text-center text-white font-bold">£330</td>
-            <td class="p-4 text-center text-white font-bold">£495</td>
-            <td class="p-4 text-center text-white font-bold">£680</td>
-            <td class="p-4 text-center text-white font-bold">£825</td>
-            <td class="p-4 text-center text-white font-bold">£990</td>
-          </tr>
-          <tr class="even:bg-white">
-            <td class="p-4 text-lg text-black">Includes</td>
-            
-            <td class="p-4 text-center text-black">5 hours of driving</td>
-            <td class="p-4 text-center text-black">10 hours of driving</td>
-             <td class="p-4 text-center text-black">15 hours of driving</td>
-            <td class="p-4 text-center text-black">20 hours of driving</td>
-            <td class="p-4 text-center text-black">25 hours of driving</td>
-            <td class="p-4 text-center text-black">30 hours of driving</td>
-          </tr>
-          <tr class="even:bg-black">
-            <td class="p-4 text-lg text-black">Duration</td>
-            <td class="p-4 text-center">Flexible</td>
-            <td class="p-4 text-center">Flexible</td>
-            <td class="p-4 text-center">Flexible</td>
-            <td class="p-4 text-center">Flexible</td>
-            <td class="p-4 text-center">Flexible</td>
-            <td class="p-4 text-center">Flexible</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div className='flex justify-end pt-4'>
-    <Link to='/booking' id='card-button' class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none">
-            Book Now
-             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-    </Link></div>
-  </div>
-</div>
   </div>
 </section>
       </div>

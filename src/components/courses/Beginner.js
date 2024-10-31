@@ -65,7 +65,7 @@ function Beginner() {
               What Our Beginner Driving Course Offers
               </h2>
               <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                At MakeIt our course is designed for new drivers in manchester who want to gain confidence and skills behind the wheel. Learn essential driving techniques, rules of the road, and vehicle control in a safe and supportive environment. Whether you’ve never driven before or need to brush up on basics, our certified instructors will guide you through every step.
+                At Make It our course is designed for new drivers in manchester who want to gain confidence and skills behind the wheel. Learn essential driving techniques, rules of the road, and vehicle control in a safe and supportive environment. Whether you’ve never driven before or need to brush up on basics, our certified instructors will guide you through every step.
               </p>
               <p className="mb-8 text-base text-body-color dark:text-dark-6">
                 We offer flexible lesson times and expert instructors to make your learning process enjoyable and successful. Let's help you get on the road to your driving goals!
@@ -101,9 +101,9 @@ function Beginner() {
       <div class="max-w-sm bg-white rounded-lg p-6 w-full md:w-80">
         <h3 class="mb-4 text-2xl font-extrabold text-gray-900">Automatic Course</h3>
         <p class="text-lg text-gray-800">90 Minutes</p>
-        <p class="mb-4 text-3xl font-bold text-gray-900">£57</p>
+        <p class="mb-4 text-3xl font-bold text-gray-900">£60</p>
         <p class="text-lg text-gray-800">120 Minutes</p>
-        <p class="mb-4 text-3xl font-bold text-gray-900">£76</p>
+        <p class="mb-4 text-3xl font-bold text-gray-900">£80</p>
       </div>
     </div>
 
@@ -262,6 +262,30 @@ function Beginner() {
 </div>
   </div>
 </section>
+<section className="bg-white  py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="text-center mb-8 lg:mb-12">
+          <h2 className="text-4xl font-extrabold text-gray-900">Driving Test Fees</h2>
+          <p className="mt-6 font-light text-gray-800 sm:text-xl">
+            We charge £100 for the driving test, which includes:
+          </p>
+        </div>
+        <div className="max-w-lg mx-auto bg-gray-50 rounded-lg shadow-md">
+          <ul className="list-disc pl-5 space-y-6 text-gray-800">
+            <li><span className="font-semibold text">One-Hour Lesson:</span> A comprehensive lesson prior to your test to help you prepare.</li>
+            <li><span className="font-semibold">Use of Vehicle:</span> Access to our vehicle during the test, ensuring you have a reliable and suitable car.</li>
+          </ul>
+        </div>
+        <div className='flex justify-end pt-4'>
+    <Link to='/booking' 
+    id='card-button' 
+    class="inline-flex items-center py-2 text-sm font-bold text-center text-black focus:outline-none"
+    >
+            Book Now
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+    </Link></div>
+      </section>
       </div>
       <Cta />
     </section>

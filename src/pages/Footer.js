@@ -20,12 +20,12 @@ function Footer() {
 
         {/* Navigation Links */}
         <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
-          <li><a href="#r" class="mr-4 hover:underline md:mr-6 ">Home</a></li>
-          <li><a href="#r" class="mr-4 hover:underline md:mr-6">About</a></li>
-          <li><a href="#r" class="mr-4 hover:underline md:mr-6 ">Services</a></li>
-          <li><a href="#r" class="mr-4 hover:underline md:mr-6">Areas Covered</a></li>
-          <li><a href="#r" class="mr-4 hover:underline md:mr-6">Book Now</a></li>
-          <li><a href="#r" class="mr-4 hover:underline md:mr-6">Contact</a></li>
+          <li><Link to="/" class="mr-4 hover:underline md:mr-6 ">Home</Link></li>
+          <li><Link to="/about" class="mr-4 hover:underline md:mr-6">About</Link></li>
+          <li><Link to="/" class="mr-4 hover:underline md:mr-6 ">Services</Link></li>
+          <li><Link to="/areas" class="mr-4 hover:underline md:mr-6">Areas Covered</Link></li>
+          <li><Link to="/booking" class="mr-4 hover:underline md:mr-6">Book Now</Link></li>
+          <li><Link to="/contact" class="mr-4 hover:underline md:mr-6">Contact</Link></li>
         </ul>
 
         {/* Social Media Links */}
@@ -46,7 +46,7 @@ function Footer() {
           <img src={passPlusLogo} alt="Pass Plus Certification" className="w-16 md:w-24 lg:w-28 h-auto" />
         </div>
 
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#r" class="hover:underline">Makeit™</a>. All Rights Reserved.</span>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <Link to="/" class="hover:underline">Makeit™</Link>. All Rights Reserved.</span>
       </div>
     </footer>
   )
