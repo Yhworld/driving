@@ -24,9 +24,10 @@ const data = [
       image: service2,
       title: 'Crash Course (Automatic & Manual)',
       service: 'S',
-      description: 'Pass Plus is a practical training course that takes at least 6 hours and is for drivers to improve their skills and drive more safely.',
+      description: 'Our intensive Crash Course is designed for rapid learning, focusing on essential driving skills to prepare you for your driving test in a short period.',
       link: '/crash-course',
-    },
+    }
+    
     // Add more data as needed
   ];
   
