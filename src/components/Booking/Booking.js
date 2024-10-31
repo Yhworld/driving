@@ -201,7 +201,7 @@ function BookingForm() {
             >
               <option value="">Select Hours</option>
               {/* Conditional hours based on selected course */}
-              {(formData.course === 'pay as you go' ? [1, 2] : 
+              {(formData.course === 'pay as you go' ? [1.5, 2] : 
                 formData.course === 'Driving Test Fees' ? [] : 
                 [5, 10, 15, 20, 25, 30]
               ).map((hour) => (
