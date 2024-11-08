@@ -25,7 +25,7 @@ function Hero() {
           Driving Made Easy in Manchester.
         </h1>
         <p className="text-slate-200">
-        Makeitdriving is a top Manchester driving school offering expert manual and automatic lessons, high pass rates, experienced instructors, and flexible schedules.
+        Make it driving is a top Manchester driving school offering expert manual and automatic lessons, high pass rates, experienced instructors, and flexible schedules.
 </p>
 
         <div className="flex justify-center">
